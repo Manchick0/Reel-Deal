@@ -1,0 +1,75 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "IFI",
+        "FSF",
+        "IFI"
+    ],
+    "key": {
+        "S": "minecraft:stick",
+        "F": "minecraft:camel_spawn_egg",
+        "I": "minecraft:iron_nugget"
+    },
+    "result": {
+        "id": "minecraft:bogged_spawn_egg",
+        "components": {
+            "!minecraft:entity_data": {},
+            "minecraft:item_name": {
+                "translate": "item.reel.fiber_line"
+            },
+            "minecraft:item_model": "reel:fiber_line",
+            "minecraft:max_stack_size": 1,
+            "minecraft:rarity": "common",
+            "minecraft:lore": [
+                "",
+                [
+                    { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                    { "text": "\u0001", "color": "white", "font": "reel:specifications", "italic": false },
+                    { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                    {
+                        "translate": "tooltip.reel.when_applied_as",
+                        "with": [
+                            {
+                                "translate": "tooltip.reel.line",
+                                "color": "gray",
+                                "font": "minecraft:default",
+                                "italic": false
+                            }
+                        ],
+                        "color": "dark_gray",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
+                ],
+                "",
+                "§l §r§7   The fibers weave together ",
+                "§l §r§7   so tightly, they can hold ",
+                "§l §r§7   onto some §fbiome-specific ",
+                "§l §r§7   §fspecies§7. ",
+                "",
+                [
+                    { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                    { "text": "\u0002", "color": "white", "font": "reel:specifications", "italic": false },
+                    { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                    {
+                        "translate": "tooltip.reel.size",
+                        "with": [
+                            [
+                                { "text": "□", "color": "dark_gray", "italic": false },
+                                { "text": "□", "color": "dark_gray", "italic": false },
+                                { "text": "■", "color": "green", "italic": false }
+                            ]
+                        ],
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
+                ],
+                "",
+                "§r§9Reel Deal"
+            ]
+        }
+    }
+}

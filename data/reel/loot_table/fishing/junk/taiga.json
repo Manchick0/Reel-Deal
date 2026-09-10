@@ -1,0 +1,24 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:sweet_berries",
+                    "weight": 40
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:fern",
+                    "weight": 25
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stick",
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}

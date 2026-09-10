@@ -1,0 +1,19 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:kelp",
+                    "weight": 60
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:ink_sac",
+                    "weight": 40
+                }
+            ]
+        }
+    ]
+}

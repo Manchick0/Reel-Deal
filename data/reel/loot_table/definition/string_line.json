@@ -1,0 +1,76 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bee_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "!minecraft:entity_data": {},
+                                "minecraft:item_name": {
+                                    "translate": "item.reel.string_line"
+                                },
+                                "minecraft:item_model": "reel:string_line",
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:rarity": "common",
+                                "minecraft:lore": [
+                                    "",
+                                    [
+                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                                        { "text": "\u0001", "color": "white", "font": "reel:specifications", "italic": false },
+                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                                        {
+                                            "translate": "tooltip.reel.when_applied_as",
+                                            "with": [
+                                                {
+                                                    "translate": "tooltip.reel.line",
+                                                    "color": "gray",
+                                                    "font": "minecraft:default",
+                                                    "italic": false
+                                                }
+                                            ],
+                                            "color": "dark_gray",
+                                            "font": "minecraft:default",
+                                            "italic": false
+                                        },
+                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
+                                    ],
+                                    "",
+                                    "§l §r§7   Too fragile to hold onto ",
+                                    "§l §r§7   anything larger than the ",
+                                    "§l §r§7   §ftiniest of fish§7. ",
+                                    "",
+                                    [
+                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                                        { "text": "\u0002", "color": "white", "font": "reel:specifications", "italic": false },
+                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                                        {
+                                            "translate": "tooltip.reel.size",
+                                            "with": [
+                                                [
+                                                    { "text": "■", "color": "red", "italic": false },
+                                                    { "text": "□", "color": "dark_gray", "italic": false },
+                                                    { "text": "□", "color": "dark_gray", "italic": false }
+                                                ]
+                                            ],
+                                            "font": "minecraft:default",
+                                            "color": "dark_gray",
+                                            "italic": false
+                                        },
+                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
+                                    ],
+                                    "",
+                                    "§r§9Reel Deal"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

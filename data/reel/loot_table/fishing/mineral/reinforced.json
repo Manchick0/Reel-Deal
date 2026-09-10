@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:coal",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:raw_copper",
+                    "weight": 25
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:raw_iron",
+                    "weight": 25
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:raw_gold",
+                    "weight": 20
+                }
+            ]
+        }
+    ]
+}

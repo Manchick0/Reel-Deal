@@ -1,0 +1,69 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "group": "fishing_rod",
+    "pattern": [
+        "  S",
+        " SL",
+        "S H"
+    ],
+    "key": {
+        "S": "minecraft:stick",
+        "L": "minecraft:bogged_spawn_egg",
+        "H": "minecraft:bat_spawn_egg"
+    },
+    "result": {
+        "id": "minecraft:fishing_rod",
+        "components": {
+            "minecraft:lore": [
+                "",
+                [
+                    { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                    { "text": "\u0001", "color": "white", "font": "reel:specifications", "bold": false, "italic": false },
+                    { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                    {
+                        "translate": "item.reel.fiber_line",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
+                ],
+                "",
+                "§l §r§7   The fibers weave together ",
+                "§l §r§7   so tightly, they can hold ",
+                "§l §r§7   onto some §fbiome-specific ",
+                "§l §r§7   §fspecies§7. ",
+                "",
+                [
+                    { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                    { "text": "\u0001", "color": "white", "font": "reel:specifications", "bold": false, "italic": false },
+                    { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                    {
+                        "translate": "item.reel.cluster_hook",
+                        "color": "yellow",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
+                ],
+                "",
+                "§l §r§7   Catch §fminerals §7instead ",
+                "§l §r§7   of fish when fishing ",
+                "§l §r§7   underground§7. ",
+                "",
+                "§r§9Reel Deal"
+            ],
+            "custom_data": {
+                "reel:line": "fiber",
+                "reel:hook": "cluster"
+            },
+            "minecraft:custom_model_data": {
+                "strings": [
+                    "fiber",
+                    "cluster"
+                ]
+            }
+        }
+    }
+}

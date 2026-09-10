@@ -1,0 +1,32 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:camel_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "!minecraft:entity_data": {},
+                                "minecraft:item_name": {
+                                    "translate": "item.reel.fiber"
+                                },
+                                "minecraft:custom_data": {
+                                    "reel:identifier": "reel:fiber"
+                                },
+                                "minecraft:item_model": "reel:fiber",
+                                "minecraft:rarity": "common",
+                                "minecraft:lore": [
+                                    "§r§9Reel Deal"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

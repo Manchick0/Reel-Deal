@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:red_mushroom",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:brown_mushroom",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stick",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}

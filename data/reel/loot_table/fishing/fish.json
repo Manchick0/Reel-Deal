@@ -1,0 +1,51 @@
+{
+    "type": "minecraft:fishing",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/fish/fiber",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:match_tool",
+                                    "predicate": {
+                                        "predicates": {
+                                            "minecraft:custom_data": {
+                                                "reel:line": "fiber"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/fish/reinforced",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:match_tool",
+                                    "predicate": {
+                                        "predicates": {
+                                            "minecraft:custom_data": {
+                                                "reel:line": "reinforced"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/fish/string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

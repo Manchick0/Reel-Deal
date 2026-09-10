@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:rabbit_hide",
+                    "weight": 40
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:rabbit_foot",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:snowball",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ],
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:ice",
+                    "weight": 30
+                }
+            ]
+        }
+    ]
+}

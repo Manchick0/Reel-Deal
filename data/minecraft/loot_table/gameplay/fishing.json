@@ -1,0 +1,182 @@
+{
+    "type": "minecraft:fishing",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:match_tool",
+                                    "predicate": {
+                                        "predicates": {
+                                            "minecraft:custom_data": {
+                                                "reel:hook": "wooden"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:alternatives",
+                            "children": [
+                                {
+                                    "type": "minecraft:group",
+                                    "conditions": [
+                                        {
+                                            "condition": "minecraft:match_tool",
+                                            "predicate": {
+                                                "predicates": {
+                                                    "minecraft:custom_data": {
+                                                        "reel:hook": "golden"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "children": [
+                                        {
+                                            "type": "minecraft:loot_table",
+                                            "value": "reel:fishing/junk",
+                                            "quality": -2,
+                                            "weight": 5
+                                        },
+                                        {
+                                            "type": "minecraft:loot_table",
+                                            "value": "reel:fishing/treasure",
+                                            "quality": 2,
+                                            "conditions": [
+                                                {
+                                                    "condition": "minecraft:entity_properties",
+                                                    "entity": "this",
+                                                    "predicate": {
+                                                        "minecraft:type_specific/fishing_hook": {
+                                                            "in_open_water": true
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "weight": 10
+                                        },
+                                        {
+                                            "type": "minecraft:alternatives",
+                                            "children": [
+                                                {
+                                                    "type": "minecraft:loot_table",
+                                                    "value": "reel:fishing/mineral",
+                                                    "conditions": [
+                                                        {
+                                                            "condition": "minecraft:match_tool",
+                                                            "predicate": {
+                                                                "predicates": {
+                                                                    "minecraft:custom_data": {
+                                                                        "reel:hook": "cluster"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "condition": "minecraft:location_check",
+                                                            "predicate": {
+                                                                "position": {
+                                                                    "y": {
+                                                                        "max": 64
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ],
+                                                    "weight": 85,
+                                                    "quality": -1
+                                                },
+                                                {
+                                                    "type": "minecraft:loot_table",
+                                                    "value": "reel:fishing/fish",
+                                                    "quality": -1,
+                                                    "weight": 85
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "minecraft:group",
+                                    "children": [
+                                        {
+                                            "type": "minecraft:loot_table",
+                                            "value": "reel:fishing/junk",
+                                            "quality": -2,
+                                            "weight": 10
+                                        },
+                                        {
+                                            "type": "minecraft:loot_table",
+                                            "value": "reel:fishing/treasure",
+                                            "quality": 2,
+                                            "conditions": [
+                                                {
+                                                    "condition": "minecraft:entity_properties",
+                                                    "entity": "this",
+                                                    "predicate": {
+                                                        "minecraft:type_specific/fishing_hook": {
+                                                            "in_open_water": true
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "weight": 5
+                                        },
+                                        {
+                                            "type": "minecraft:alternatives",
+                                            "children": [
+                                                {
+                                                    "type": "minecraft:loot_table",
+                                                    "value": "reel:fishing/mineral",
+                                                    "conditions": [
+                                                        {
+                                                            "condition": "minecraft:match_tool",
+                                                            "predicate": {
+                                                                "predicates": {
+                                                                    "minecraft:custom_data": {
+                                                                        "reel:hook": "cluster"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "condition": "minecraft:location_check",
+                                                            "predicate": {
+                                                                "position": {
+                                                                    "y": {
+                                                                        "max": 64
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ],
+                                                    "weight": 85,
+                                                    "quality": -1
+                                                },
+                                                {
+                                                    "type": "minecraft:loot_table",
+                                                    "value": "reel:fishing/fish",
+                                                    "quality": -1,
+                                                    "weight": 85
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

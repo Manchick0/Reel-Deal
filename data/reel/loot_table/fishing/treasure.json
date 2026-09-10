@@ -1,0 +1,41 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:book",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "options": "#minecraft:on_random_loot",
+                            "levels": 30
+                        }
+                    ],
+                    "weight": 65
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:nautilus_shell",
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "reel:definition/fiber",
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:heart_of_the_sea",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "reel:definition/golden_hook",
+                    "weight": 2
+                }
+            ]
+        }
+    ]
+}

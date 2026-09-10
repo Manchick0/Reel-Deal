@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:clay_ball",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ],
+                    "weight": 50
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:sugar_cane",
+                    "weight": 40
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:ink_sac",
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}

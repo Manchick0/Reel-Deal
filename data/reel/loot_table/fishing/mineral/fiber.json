@@ -1,0 +1,111 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:coal",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:raw_copper",
+                    "weight": 25
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:raw_iron",
+                    "weight": 25
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:raw_gold",
+                    "weight": 20
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:redstone",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "position": {
+                                    "y": {
+                                        "max": 16
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:lapis_lazuli",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "position": {
+                                    "y": {
+                                        "max": 30
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 9
+                            }
+                        }
+                    ],
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "position": {
+                                    "y": {
+                                        "max": 16
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "biomes": "#reel:is_mountains"
+                            }
+                        }
+                    ],
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}

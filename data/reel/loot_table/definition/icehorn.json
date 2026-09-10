@@ -1,0 +1,55 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "!minecraft:entity_data": {},
+                                "minecraft:item_name": {
+                                    "translate": "item.reel.icehorn"
+                                },
+                                "minecraft:custom_data": {
+                                    "reel:identifier": "reel:icehorn"
+                                },
+                                "minecraft:item_model": "reel:icehorn",
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "on_consume_effects": [
+                                        {
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:slowness",
+                                                    "duration": 100,
+                                                    "amplifier": 1
+                                                }
+                                            ],
+                                            "probability": 0.20
+                                        }
+                                    ],
+                                    "sound": "minecraft:block.glass.break",
+                                    "animation": "eat"
+                                },
+                                "minecraft:food": {
+                                    "nutrition": 6,
+                                    "saturation": 2,
+                                    "can_always_eat": false
+                                },
+                                "minecraft:rarity": "common",
+                                "minecraft:lore": [
+                                    "§r§9Reel Deal"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

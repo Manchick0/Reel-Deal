@@ -1,0 +1,69 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " I ",
+        " N "
+    ],
+    "key": {
+        "I": "minecraft:iron_ingot",
+        "N": "minecraft:iron_nugget"
+    },
+    "result": {
+        "id": "minecraft:armadillo_spawn_egg",
+        "components": {
+            "!minecraft:entity_data": {},
+            "minecraft:item_name": {
+                "translate": "item.reel.iron_hook"
+            },
+            "minecraft:item_model": "reel:iron_hook",
+            "minecraft:rarity": "common",
+            "minecraft:lore": [
+                "",
+                [
+                    {
+                        "text": " ⚓ ",
+                        "color": "blue",
+                        "italic": false
+                    },
+                    {
+                        "translate": "tooltip.reel.when_applied_as",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    " ",
+                    {
+                        "translate": "tooltip.reel.hook",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": ": ",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    " "
+                ],
+                "",
+                [
+                    "    ",
+                    {
+                        "translate": "item.reel.iron_hook.description[0]",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    " "
+                ],
+                [
+                    "    ",
+                    {
+                        "translate": "item.reel.iron_hook.description[1]",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    " "
+                ],
+                ""
+            ]
+        }
+    }
+}

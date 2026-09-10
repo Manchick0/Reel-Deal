@@ -1,0 +1,263 @@
+{
+    "type": "minecraft:fishing",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:group",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:match_tool",
+                                    "predicate": {
+                                        "predicates": {
+                                            "minecraft:custom_data": {
+                                                "reel:hook": "anchor"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:cod",
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_custom_data",
+                                            "tag": {
+                                                "reel:substitution": {
+                                                    "identifier": "minecraft:cod"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "weight": 60
+                                },
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:salmon",
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_custom_data",
+                                            "tag": {
+                                                "reel:substitution": {
+                                                    "identifier": "minecraft:salmon"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "weight": 25
+                                },
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:squid_spawn_egg",
+                                    "conditions": [
+                                        {
+                                            "condition": "minecraft:location_check",
+                                            "predicate": {
+                                                "biomes": "#reel:permits_squids"
+                                            }
+                                        }
+                                    ],
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_custom_data",
+                                            "tag": {
+                                                "reel:substitution": {
+                                                    "identifier": "minecraft:squid"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "weight": 20
+                                },
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:glow_squid_spawn_egg",
+                                    "conditions": [
+                                        {
+                                            "condition": "minecraft:location_check",
+                                            "predicate": {
+                                                "position": {
+                                                    "y": {
+                                                        "max": 32
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_custom_data",
+                                            "tag": {
+                                                "reel:substitution": {
+                                                    "identifier": "minecraft:glow_squid"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "weight": 20
+                                },
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:frog_spawn_egg",
+                                    "conditions": [
+                                        {
+                                            "condition": "minecraft:location_check",
+                                            "predicate": {
+                                                "biomes": "#reel:permits_frogs"
+                                            }
+                                        }
+                                    ],
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_custom_data",
+                                            "tag": {
+                                                "reel:substitution": {
+                                                    "identifier": "minecraft:frog"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "weight": 20
+                                },
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:pufferfish",
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_custom_data",
+                                            "tag": {
+                                                "reel:substitution": {
+                                                    "identifier": "minecraft:pufferfish"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "weight": 13
+                                },
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:tropical_fish",
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_custom_data",
+                                            "tag": {
+                                                "reel:substitution": {
+                                                    "identifier": "minecraft:tropical_fish"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "weight": 2
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:group",
+                            "children": [
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:cod",
+                                    "weight": 60
+                                },
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:salmon",
+                                    "weight": 25
+                                },
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:pufferfish",
+                                    "weight": 13
+                                },
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:tropical_fish",
+                                    "weight": 2
+                                },
+                                {
+                                    "type": "minecraft:alternatives",
+                                    "children": [
+                                        {
+                                            "type": "minecraft:loot_table",
+                                            "value": "reel:definition/cobblefish",
+                                            "conditions": [
+                                                {
+                                                    "condition": "minecraft:location_check",
+                                                    "predicate": {
+                                                        "position": {
+                                                            "y": {
+                                                                "max": 64
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:loot_table",
+                                            "value": "reel:definition/deepfish",
+                                            "conditions": [
+                                                {
+                                                    "condition": "minecraft:location_check",
+                                                    "predicate": {
+                                                        "position": {
+                                                            "y": {
+                                                                "max": 0
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:loot_table",
+                                            "value": "reel:definition/bullfish",
+                                            "conditions": [
+                                                {
+                                                    "condition": "minecraft:location_check",
+                                                    "predicate": {
+                                                        "biomes": "#reel:fish/has_bullfish"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:loot_table",
+                                            "value": "reel:definition/fishroom",
+                                            "conditions": [
+                                                {
+                                                    "condition": "minecraft:location_check",
+                                                    "predicate": {
+                                                        "biomes": "#reel:fish/has_fishroom"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:loot_table",
+                                            "value": "reel:definition/icehorn",
+                                            "conditions": [
+                                                {
+                                                    "condition": "minecraft:location_check",
+                                                    "predicate": {
+                                                        "biomes": "#reel:fish/has_icehorn"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

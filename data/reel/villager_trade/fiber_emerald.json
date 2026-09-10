@@ -1,0 +1,23 @@
+{
+    "wants": {
+        "id": "minecraft:camel_spawn_egg",
+        "components": {
+            "minecraft:item_name": {
+                "translate": "item.reel.fiber"
+            },
+            "minecraft:custom_data": {
+                "reel:identifier": "reel:fiber"
+            },
+            "minecraft:item_model": "reel:fiber",
+            "minecraft:rarity": "common",
+            "minecraft:lore": ["§r§9Reel Deal"]
+        },
+        "count": 1
+    },
+    "gives": {
+        "id": "minecraft:emerald",
+        "count": 3
+    },
+    "max_uses": 4,
+    "xp": 5
+}

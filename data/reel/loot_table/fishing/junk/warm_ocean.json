@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:sea_pickle",
+                    "weight": 50
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:tube_coral",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:brain_coral",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bubble_coral",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:fire_coral",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:horn_coral",
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}

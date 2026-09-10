@@ -1,0 +1,125 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bone",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stick",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:definition/wooden_hook",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:match_tool",
+                                    "predicate": {
+                                        "predicates": {
+                                            "minecraft:custom_data": {
+                                                "reel:hook": "wooden"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "weight": 1
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:definition/wooden_hook",
+                            "weight": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/underground",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "position": {
+                                            "y": {
+                                                "max": 30
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "weight": 65
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/cold",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "#reel:junk/cold"
+                                    }
+                                }
+                            ],
+                            "weight": 65
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/flower_forest",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "minecraft:flower_forest"
+                                    }
+                                }
+                            ],
+                            "weight": 65
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/birch_forest",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "#reel:junk/birch_forest"
+                                    }
+                                }
+                            ],
+                            "weight": 65
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/swamp",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "#reel:junk/swamp"
+                                    }
+                                }
+                            ],
+                            "weight": 65
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

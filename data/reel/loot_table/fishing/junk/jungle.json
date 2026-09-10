@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bamboo",
+                    "weight": 40
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:cocoa_beans",
+                    "weight": 25
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:melon_slice",
+                    "weight": 25
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stick",
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}
