@@ -1,4 +1,4 @@
-![Banner](/banner.png)
+![Banner](https://raw.githubusercontent.com/Manchick0/Reel-Deal/refs/heads/master/banner.png)
 
 # <center>Reel Deal 🧰</center>
 
