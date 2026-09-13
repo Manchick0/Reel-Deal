@@ -3,11 +3,11 @@
         "icon": {
             "id": "minecraft:paper",
             "components": {
-                "minecraft:item_model": "reel:iron_hook"
+                "minecraft:item_model": "reel:fishroom"
             }
         },
         "title": { "translate": "advancements.reel.root" },
-        "description": { "translate": "advancements.reel.root.description", "color": "gray" },
+        "description": { "translate": "advancements.reel.root.description", "color": "gray", "italic": true },
         "background": "minecraft:block/mud",
         "announce_to_chat": false,
         "show_toast": false

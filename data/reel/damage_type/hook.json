@@ -1,7 +1,0 @@
-{
-    "message_id": "hook",
-    "death_message_type": "default",
-    "effects": "poking",
-    "scaling": "when_caused_by_living_non_player",
-    "exhaustion": 0.1
-}

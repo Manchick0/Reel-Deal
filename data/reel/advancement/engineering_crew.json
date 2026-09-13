@@ -1,0 +1,128 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:paper",
+            "components": {
+                "minecraft:item_model": "reel:iron_hook"
+            }
+        },
+        "title": { "translate": "advancements.reel.engineering_crew" },
+        "description": [
+            { "translate": "advancements.reel.engineering_crew.description", "color": "gray" },
+            { "text": "\u000A\u000A" },
+            { "translate": "advancement.reel.crafting_required", "color": "dark_gray" }
+        ]
+    },
+    "criteria": {
+        "reel:woven/anchor": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:woven/anchor"
+            }
+        },
+        "reel:woven/cluster": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:woven/cluster"
+            }
+        },
+        "reel:woven/golden": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:woven/golden"
+            }
+        },
+        "reel:woven/iron": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:woven/iron"
+            }
+        },
+        "reel:woven/wooden": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:woven/wooden"
+            }
+        },
+        "reel:reinforced/anchor": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:reinforced/anchor"
+            }
+        },
+        "reel:reinforced/cluster": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:reinforced/cluster"
+            }
+        },
+        "reel:reinforced/golden": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:reinforced/golden"
+            }
+        },
+        "reel:reinforced/iron": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:reinforced/iron"
+            }
+        },
+        "reel:reinforced/wooden": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:reinforced/wooden"
+            }
+        },
+        "reel:fiber/anchor": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:fiber/anchor"
+            }
+        },
+        "reel:fiber/cluster": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:fiber/cluster"
+            }
+        },
+        "reel:fiber/golden": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:fiber/golden"
+            }
+        },
+        "reel:fiber/iron": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:fiber/iron"
+            }
+        },
+        "reel:fiber/wooden": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "reel:fiber/wooden"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "reel:woven/anchor",
+            "reel:woven/cluster",
+            "reel:woven/golden",
+            "reel:woven/iron",
+            "reel:woven/wooden",
+            "reel:reinforced/anchor",
+            "reel:reinforced/cluster",
+            "reel:reinforced/golden",
+            "reel:reinforced/iron",
+            "reel:reinforced/wooden",
+            "reel:fiber/anchor",
+            "reel:fiber/cluster",
+            "reel:fiber/golden",
+            "reel:fiber/iron",
+            "reel:fiber/wooden"
+        ]
+    ],
+    "parent": "reel:root"
+}

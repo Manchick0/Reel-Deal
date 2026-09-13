@@ -12,7 +12,7 @@
                 "translate": "advancements.reel.scaling_the_scales.description",
                 "with": [
                    {
-                       "translate": "item.reel.cluster_hook",
+                       "translate": "item.reel.fiber_line",
                        "color": "white"
                    }
                 ],
@@ -37,5 +37,5 @@
             }
         }
     },
-    "parent": "reel:root"
+    "parent": "reel:engineering_crew"
 }
