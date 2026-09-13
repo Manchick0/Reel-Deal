@@ -24,8 +24,8 @@ function main() {
 }
 
 /**
- * @param {{ type: string, identifier: string, description: string[] }} line
- * @param {{ type: string, identifier: string, description: string[] }} hook
+ * @param {{ type: string, identifier: string, rarity?: string, description: string[] }} line
+ * @param {{ type: string, identifier: string, rarity?: string, description: string[] }} hook
  */
 function defineRecipe(line, hook) {
     const identifiers = [splitIdentifier(line.identifier)[0], splitIdentifier(hook.identifier)[0]];
@@ -56,7 +56,7 @@ function defineRecipe(line, hook) {
                         { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
                         {
                             "translate": `item.${identifiers[0]}.${names[0]}`,
-                            "color": "white",
+                            "color": matchingColor(line.rarity),
                             "font": "minecraft:default",
                             "italic": false
                         },
@@ -71,7 +71,7 @@ function defineRecipe(line, hook) {
                         { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
                         {
                             "translate": `item.${identifiers[1]}.${names[1]}`,
-                            "color": "white",
+                            "color": matchingColor(hook.rarity),
                             "font": "minecraft:default",
                             "italic": false
                         },
@@ -99,8 +99,8 @@ function defineRecipe(line, hook) {
 }
 
 /**
- * @param {{ type: string, identifier: string, description: string[] }} line
- * @param {{ type: string, identifier: string, description: string[] }} hook
+ * @param {{ type: string, identifier: string, rarity?: string, description: string[] }} line
+ * @param {{ type: string, identifier: string, rarity?: string, description: string[] }} hook
  */
 function defineAdvancement(line, hook) {
     const identifiers = [splitIdentifier(line.identifier)[0], splitIdentifier(hook.identifier)[0]];
@@ -155,11 +155,11 @@ function defineAdvancement(line, hook) {
 }
 
 /**
- * @param {{ type: string, identifier: string, description: string[] }} candidate 
+ * @param {{ type: string, identifier: string, rarity?: string, description: string[] }} candidate 
  * @param {string} tooltip
  */
-function definePart(candidate, tooltip) {
-    const [namespace, name] = splitIdentifier(candidate.identifier);
+function definePart({ type, identifier, rarity, description }, tooltip) {
+    const [namespace, name] = splitIdentifier(identifier);
     const destination = path.join(DEFINITION_PATH, name);
     const definition = {
         "pools": [
@@ -168,7 +168,7 @@ function definePart(candidate, tooltip) {
                 "entries": [
                     {
                         "type": "minecraft:item",
-                        "name": `${candidate.type}`,
+                        "name": `${type}`,
                         "functions": [
                             {
                                 "function": "minecraft:set_components",
@@ -182,7 +182,7 @@ function definePart(candidate, tooltip) {
                                         "reel:identifier": `${namespace}:${name}`
                                     },
                                     "minecraft:max_stack_size": 1,
-                                    "minecraft:rarity": "common",
+                                    "minecraft:rarity": rarity ?? "common",
                                     "minecraft:lore": [
                                         "",
                                         [
@@ -206,7 +206,7 @@ function definePart(candidate, tooltip) {
                                             { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
                                         ],
                                         "",
-                                        ...indentDescription(candidate.description),
+                                        ...indentDescription(description),
                                         "",
                                         "§r§9Reel Deal"
                                     ]
@@ -218,7 +218,7 @@ function definePart(candidate, tooltip) {
             }
         ]
     }
-    console.log(`[+] Writing definition for ${candidate.identifier}...`)
+    console.log(`[+] Writing definition for ${identifier}...`)
     fs.writeFileSync(`${destination}.json`, JSON.stringify(definition, null, 4));
 }
 
@@ -243,6 +243,20 @@ function splitIdentifier(identifier) {
     if (match)
         return [match[1], match[2]];
     return undefined;
+}
+
+/**
+ * @param {string} identifier
+ * @returns {string}
+ */
+function matchingColor(rarity) {
+    if (rarity === "uncommon")
+        return "yellow";
+    if (rarity === "rare")
+        return "aqua";
+    if (rarity === "epic")
+        return "light_purple";
+    return "white";
 }
 
 process.exit(main());

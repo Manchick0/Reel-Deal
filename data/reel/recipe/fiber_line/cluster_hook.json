@@ -78,7 +78,7 @@
                     },
                     {
                         "translate": "item.reel.cluster_hook",
-                        "color": "white",
+                        "color": "yellow",
                         "font": "minecraft:default",
                         "italic": false
                     },

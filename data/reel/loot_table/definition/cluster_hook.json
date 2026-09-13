@@ -19,7 +19,7 @@
                                     "reel:identifier": "reel:cluster_hook"
                                 },
                                 "minecraft:max_stack_size": 1,
-                                "minecraft:rarity": "common",
+                                "minecraft:rarity": "uncommon",
                                 "minecraft:lore": [
                                     "",
                                     [

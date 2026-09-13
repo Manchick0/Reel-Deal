@@ -78,7 +78,7 @@
                     },
                     {
                         "translate": "item.reel.anchor_hook",
-                        "color": "white",
+                        "color": "aqua",
                         "font": "minecraft:default",
                         "italic": false
                     },
@@ -90,7 +90,8 @@
                     }
                 ],
                 "",
-                "§l §r§7   The fish is caught §falive§7. ",
+                "§l §r§7   Large enough to pull ",
+                "§l §r§7   the fish out §falive§7. ",
                 "",
                 "§r§9Reel Deal"
             ],
