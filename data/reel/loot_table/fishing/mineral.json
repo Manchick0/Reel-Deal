@@ -41,7 +41,7 @@
                         },
                         {
                             "type": "minecraft:loot_table",
-                            "value": "reel:fishing/mineral/string"
+                            "value": "reel:fishing/mineral/woven"
                         }
                     ]
                 }

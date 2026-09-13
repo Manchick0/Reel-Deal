@@ -21,7 +21,7 @@
                                     "",
                                     [
                                         { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
-                                        { "text": "\u0001", "color": "white", "font": "reel:specifications", "bold": false, "italic": false },
+                                        { "text": "\u0001", "color": "white", "font": "reel:specification", "bold": false, "italic": false },
                                         { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
                                         {
                                             "translate": "tooltip.reel.when_applied_as",

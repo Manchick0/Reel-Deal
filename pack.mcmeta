@@ -3,5 +3,13 @@
         "description": "Time to deal with that reel!\n§8@Manchick | v§71.0.0",
         "min_format": [107, 1],
         "max_format": [107, 1]
+    },
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "recipe/fishing_rod"
+            }
+        ]
     }
 }

@@ -25,3 +25,5 @@ Hooks, on the other hand, is where you get creative. Each one has a unique abili
 Once upon a time, in the version 1.14, Mojang has added bamboo as a junk catch in jungle biomes. One would assume that should have marked an introduction of biome-specific junk to other biomes too, but nothing followed.
 
 Luckily, we aren't Mojang. So we took this idea and ran with it. Reel Deal introduces biome-specific junk loot tables, but also modifies the treasure loot table to be more inline with the modern game.
+
+![Contents](https://raw.githubusercontent.com/Manchick0/Reel-Deal/refs/heads/master/contents.png)

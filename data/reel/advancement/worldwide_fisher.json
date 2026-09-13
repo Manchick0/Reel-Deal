@@ -1,0 +1,92 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:paper",
+            "components": {
+                "minecraft:item_model": "reel:bullfish"
+            }
+        },
+        "title": { "translate": "advancements.reel.worldwide_fisher" },
+        "description": [
+            { "translate": "advancements.reel.worldwide_fisher.description", "color": "gray" }
+        ]
+    },
+    "criteria": {
+        "reel:cobblefish": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:paper",
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "reel:identifier": "reel:cobblefish"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "reel:deepfish": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:paper",
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "reel:identifier": "reel:deepfish"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "reel:fishroom": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:paper",
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "reel:identifier": "reel:fishroom"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "reel:bullfish": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:paper",
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "reel:identifier": "reel:bullfish"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "reel:icehorn": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:paper",
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "reel:identifier": "reel:icehorn"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "reel:scaling_the_scales"
+}

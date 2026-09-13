@@ -23,7 +23,7 @@
                     {
                         "text": "\u0001",
                         "color": "white",
-                        "font": "reel:specifications",
+                        "font": "reel:specification",
                         "bold": false,
                         "italic": false
                     },
@@ -61,7 +61,7 @@
                     {
                         "text": "\u0001",
                         "color": "white",
-                        "font": "reel:specifications",
+                        "font": "reel:specification",
                         "italic": false
                     },
                     {
@@ -90,11 +90,15 @@
                 "§r§9Reel Deal"
             ],
             "custom_data": {
-                "reel:line": "string",
+                "reel:constructed": true,
+                "reel:line": "woven",
                 "reel:hook": "golden"
             },
             "minecraft:custom_model_data": {
-                "strings": ["string", "golden"]
+                "strings": [
+                    "woven",
+                    "golden"
+                ]
             }
         }
     }

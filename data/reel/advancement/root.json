@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:paper",
+            "components": {
+                "minecraft:item_model": "reel:iron_hook"
+            }
+        },
+        "title": { "translate": "advancements.reel.root" },
+        "description": { "translate": "advancements.reel.root.description", "color": "gray" },
+        "background": "minecraft:block/mud",
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

@@ -1,3 +1,5 @@
+execute as @a[advancements={reel:possible_mendthrough=false}] if items entity @s container.* minecraft:fishing_rod[!minecraft:custom_data~{"reel:constructed": true}] run advancement grant @s only reel:possible_mendthrough
+
 execute as @e[type=minecraft:item] at @s if data entity @s "Item"."components"."minecraft:custom_data"."reel:substitution" \
     run function reel:substitute with entity @s "Item"."components"."minecraft:custom_data"."reel:substitution"
     

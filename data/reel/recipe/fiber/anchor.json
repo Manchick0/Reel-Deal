@@ -15,7 +15,7 @@
                 "",
                 [
                     { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
-                    { "text": "\u0001", "color": "white", "font": "reel:specifications", "bold": false, "italic": false },
+                    { "text": "\u0001", "color": "white", "font": "reel:specification", "bold": false, "italic": false },
                     { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
                     {
                         "translate": "item.reel.fiber_line",
@@ -33,7 +33,7 @@
                 "",
                 [
                     { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
-                    { "text": "\u0001", "color": "white", "font": "reel:specifications", "bold": false, "italic": false },
+                    { "text": "\u0001", "color": "white", "font": "reel:specification", "bold": false, "italic": false },
                     { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
                     {
                         "translate": "item.reel.anchor_hook",
@@ -49,6 +49,7 @@
                 "§r§9Reel Deal"
             ],
             "custom_data": {
+                "reel:constructed": true,
                 "reel:line": "fiber",
                 "reel:hook": "anchor"
             },

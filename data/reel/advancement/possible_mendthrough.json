@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": "minecraft:fishing_rod",
+        "title": { "translate": "advancements.reel.possible_mendthrough" },
+        "description": [
+            { "translate": "advancements.reel.possible_mendthrough.description", "color": "gray" },
+            { "text": "\u000A\u000A" },
+            { "translate": "advancement.reel.hidden", "color": "dark_gray" }
+        ],
+        "hidden": true
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "reel:root"
+}

@@ -10,7 +10,7 @@
     "key": {
         "S": "minecraft:stick",
         "L": "minecraft:bee_spawn_egg",
-        "H": "minecraft:allay_spawn_egg"
+        "H": "minecraft:breeze_spawn_egg"
     },
     "result": {
         "id": "minecraft:fishing_rod",
@@ -19,7 +19,7 @@
                 "",
                 [
                     { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
-                    { "text": "\u0001", "color": "white", "font": "reel:specifications", "bold": false, "italic": false },
+                    { "text": "\u0001", "color": "white", "font": "reel:specification", "bold": false, "italic": false },
                     { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
                     {
                         "translate": "item.reel.string_line",
@@ -36,31 +36,30 @@
                 "",
                 [
                     { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
-                    { "text": "\u0001", "color": "white", "font": "reel:specifications", "bold": false, "italic": false },
+                    { "text": "\u0001", "color": "white", "font": "reel:specification", "bold": false, "italic": false },
                     { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
                     {
-                        "translate": "item.reel.wooden_hook",
-                        "color": "white",
+                        "translate": "item.reel.anchor_hook",
+                        "color": "light_purple",
                         "font": "minecraft:default",
                         "italic": false
                     },
                     { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
                 ],
                 "",
-                "§l §r§7   Too weak to hold onto ",
-                "§l §r§7   any fish, only §fjunk ",
-                "§l §r§7   can be promised. ",
+                "§l §r§7   The fish is caught §falive§7. ",
                 "",
                 "§r§9Reel Deal"
             ],
             "custom_data": {
-                "reel:line": "string",
-                "reel:hook": "wooden"
+                "reel:constructed": true,
+                "reel:line": "woven",
+                "reel:hook": "anchor"
             },
             "minecraft:custom_model_data": {
                 "strings": [
-                    "string",
-                    "wooden"
+                    "woven",
+                    "anchor"
                 ]
             }
         }
