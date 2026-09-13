@@ -1,0 +1,36 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_fiber": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:camel_spawn_egg",
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "reel:identifier": "reel:fiber"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "has_horizontal": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "reel:fiber_line_horizonzal"
+            }
+        },
+        "has_vertical": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "reel:fiber_line_vertical"
+            }
+        }
+    },
+    "requirements": [["has_fiber", "has_horizontal", "has_vertical"]],
+    "rewards": {
+        "recipes": ["reel:fiber_line_horizonzal", "reel:fiber_line_vertical"]
+    }
+}

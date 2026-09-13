@@ -1,0 +1,111 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "reel:fishing_rod",
+    "category": "equipment",
+    "pattern": [
+        "  S",
+        " SL",
+        "S H"
+    ],
+    "key": {
+        "S": "minecraft:stick",
+        "L": "minecraft:bogged_spawn_egg",
+        "H": "minecraft:axolotl_spawn_egg"
+    },
+    "result": {
+        "id": "minecraft:fishing_rod",
+        "components": {
+            "minecraft:lore": [
+                "",
+                [
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "text": "\u0001",
+                        "color": "white",
+                        "font": "reel:specification",
+                        "bold": false,
+                        "italic": false
+                    },
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "translate": "item.reel.fiber_line",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    }
+                ],
+                "",
+                "§l §r§7   The fibers weave together ",
+                "§l §r§7   so tightly, they can hold ",
+                "§l §r§7   onto some §fbiome-specific ",
+                "§l §r§7   §fspecies§7. ",
+                "",
+                [
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "text": "\u0001",
+                        "color": "white",
+                        "font": "reel:specification",
+                        "bold": false,
+                        "italic": false
+                    },
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "translate": "item.reel.golden_hook",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    }
+                ],
+                "",
+                "§l §r§7   Doubles the odds of ",
+                "§l §r§7   catching §ftreasure§7. ",
+                "",
+                "§r§9Reel Deal"
+            ],
+            "minecraft:custom_data": {
+                "reel:constructed": true,
+                "reel:line": "reel:fiber_line",
+                "reel:hook": "reel:golden_hook"
+            },
+            "minecraft:custom_model_data": {
+                "strings": [
+                    "reel:fiber_line",
+                    "reel:golden_hook"
+                ]
+            }
+        }
+    }
+}

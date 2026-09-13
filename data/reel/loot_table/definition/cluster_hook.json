@@ -15,14 +15,32 @@
                                     "translate": "item.reel.cluster_hook"
                                 },
                                 "minecraft:item_model": "reel:cluster_hook",
+                                "minecraft:custom_data": {
+                                    "reel:identifier": "reel:cluster_hook"
+                                },
                                 "minecraft:max_stack_size": 1,
-                                "minecraft:rarity": "uncommon",
+                                "minecraft:rarity": "common",
                                 "minecraft:lore": [
                                     "",
                                     [
-                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
-                                        { "text": "\u0001", "color": "white", "font": "reel:specification", "italic": false },
-                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                                        {
+                                            "text": " ",
+                                            "color": "white",
+                                            "font": "minecraft:default",
+                                            "italic": false
+                                        },
+                                        {
+                                            "text": "\u0001",
+                                            "color": "white",
+                                            "font": "reel:specification",
+                                            "italic": false
+                                        },
+                                        {
+                                            "text": " ",
+                                            "color": "white",
+                                            "font": "minecraft:default",
+                                            "italic": false
+                                        },
                                         {
                                             "translate": "tooltip.reel.when_applied_as",
                                             "with": [
@@ -37,12 +55,17 @@
                                             "font": "minecraft:default",
                                             "italic": false
                                         },
-                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
+                                        {
+                                            "text": " ",
+                                            "color": "white",
+                                            "font": "minecraft:default",
+                                            "italic": false
+                                        }
                                     ],
                                     "",
-                                    "§l §r§7   Catch §fminerals §7instead ",
-                                    "§l §r§7   of fish when fishing ",
-                                    "§l §r§7   underground§7. ",
+                                    "§l §r§7   Catch §fminerals §7instead  ",
+                                    "§l §r§7   of fish when fishing  ",
+                                    "§l §r§7   underground§7.  ",
                                     "",
                                     "§r§9Reel Deal"
                                 ]

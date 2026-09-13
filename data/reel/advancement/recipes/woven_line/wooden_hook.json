@@ -1,0 +1,51 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_line": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "reel:identifier": "reel:woven_line"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "has_hook": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "reel:identifier": "reel:wooden_hook"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "reel:woven_line/wooden_hook"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_line",
+            "has_hook",
+            "has_the_recipe"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "reel:woven_line/wooden_hook"
+        ]
+    }
+}

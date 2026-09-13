@@ -30,7 +30,7 @@
                                     "predicate": {
                                         "predicates": {
                                             "minecraft:custom_data": {
-                                                "reel:hook": "wooden"
+                                                "reel:hook": "reel:wooden_hook"
                                             }
                                         }
                                     }

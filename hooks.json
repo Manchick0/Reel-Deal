@@ -1,0 +1,43 @@
+[
+    {
+        "type": "minecraft:allay_spawn_egg",
+        "identifier": "reel:wooden_hook",
+        "description": [
+            "Too weak to hold onto",
+            "any fish, only §fjunk",
+            "can be promised."
+        ]
+    },
+    {
+        "type": "minecraft:armadillo_spawn_egg",
+        "identifier": "reel:iron_hook",
+        "description": [
+            "The §frecognized standard",
+            "among the professionals."
+        ]
+    },
+    {
+        "type": "minecraft:axolotl_spawn_egg",
+        "identifier": "reel:golden_hook",
+        "description": [
+            "Doubles the odds of",
+            "catching §ftreasure§7."
+        ]
+    },
+    {
+        "type": "minecraft:bat_spawn_egg",
+        "identifier": "reel:cluster_hook",
+        "description": [
+            "Catch §fminerals §7instead ",
+            "of fish when fishing ",
+            "underground§7. "
+        ]
+    },
+    {
+        "type": "minecraft:breeze_spawn_egg",
+        "identifier": "reel:anchor_hook",
+        "description": [
+            "The fish is caught §falive§7."
+        ]
+    }
+]

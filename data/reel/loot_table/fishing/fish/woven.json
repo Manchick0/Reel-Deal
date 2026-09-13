@@ -15,7 +15,7 @@
                                     "predicate": {
                                         "predicates": {
                                             "minecraft:custom_data": {
-                                                "reel:hook": "anchor"
+                                                "reel:hook": "reel:anchor_hook"
                                             }
                                         }
                                     }

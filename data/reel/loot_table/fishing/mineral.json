@@ -16,7 +16,7 @@
                                     "predicate": {
                                         "predicates": {
                                             "minecraft:custom_data": {
-                                                "reel:line": "fiber"
+                                                "reel:line": "reel:fiber_line"
                                             }
                                         }
                                     }
@@ -32,7 +32,7 @@
                                     "predicate": {
                                         "predicates": {
                                             "minecraft:custom_data": {
-                                                "reel:line": "reinforced"
+                                                "reel:line": "reel:reinforced_line"
                                             }
                                         }
                                     }

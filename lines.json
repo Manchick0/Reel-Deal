@@ -1,0 +1,30 @@
+[
+    {
+        "type": "minecraft:bee_spawn_egg",
+        "identifier": "reel:woven_line",
+        "description": [
+            "Too fragile to hold onto",
+            "anything larger than the",
+            "§ftiniest of fish§7."
+        ]
+    },
+    {
+        "type": "minecraft:blaze_spawn_egg",
+        "identifier": "reel:reinforced_line",
+        "description": [
+            "Sturdy and reliable to",
+            "hold onto §ffish of any",
+            "§fgenus§7."
+        ]
+    },
+    {
+        "type": "minecraft:bogged_spawn_egg",
+        "identifier": "reel:fiber_line",
+        "description": [
+            "The fibers weave together",
+            "so tightly, they can hold",
+            "onto some §fbiome-specific",
+            "§fspecies§7."
+        ]
+    }
+]

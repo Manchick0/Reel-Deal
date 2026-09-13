@@ -1,0 +1,31 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_string": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:string"
+                    }
+                ]
+            }
+        },
+        "has_horizontal": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "reel:woven_line_horizontal"
+            }
+        },
+        "has_vertical": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "reel:woven_line_vertical"
+            }
+        }
+    },
+    "requirements": [["has_string", "has_horizontal", "has_vertical"]],
+    "rewards": {
+        "recipes": ["reel:woven_line_horizontal", "reel:woven_line_vertical"]
+    }
+}

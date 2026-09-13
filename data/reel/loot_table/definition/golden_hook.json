@@ -15,13 +15,32 @@
                                     "translate": "item.reel.golden_hook"
                                 },
                                 "minecraft:item_model": "reel:golden_hook",
+                                "minecraft:custom_data": {
+                                    "reel:identifier": "reel:golden_hook"
+                                },
+                                "minecraft:max_stack_size": 1,
                                 "minecraft:rarity": "common",
-                                "minecraft:lore":  [
+                                "minecraft:lore": [
                                     "",
                                     [
-                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
-                                        { "text": "\u0001", "color": "white", "font": "reel:specification", "italic": false },
-                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                                        {
+                                            "text": " ",
+                                            "color": "white",
+                                            "font": "minecraft:default",
+                                            "italic": false
+                                        },
+                                        {
+                                            "text": "\u0001",
+                                            "color": "white",
+                                            "font": "reel:specification",
+                                            "italic": false
+                                        },
+                                        {
+                                            "text": " ",
+                                            "color": "white",
+                                            "font": "minecraft:default",
+                                            "italic": false
+                                        },
                                         {
                                             "translate": "tooltip.reel.when_applied_as",
                                             "with": [
@@ -36,7 +55,12 @@
                                             "font": "minecraft:default",
                                             "italic": false
                                         },
-                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
+                                        {
+                                            "text": " ",
+                                            "color": "white",
+                                            "font": "minecraft:default",
+                                            "italic": false
+                                        }
                                     ],
                                     "",
                                     "§l §r§7   Doubles the odds of ",

@@ -1,14 +1,15 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "IFI",
-        "FSF",
-        "IFI"
+        " F ",
+        " L ",
+        " F "
     ],
+    "category": "equipment",
+    "group": "reel:fiber_line",
     "key": {
-        "S": "minecraft:stick",
-        "F": "minecraft:camel_spawn_egg",
-        "I": "minecraft:iron_nugget"
+        "L": "minecraft:blaze_spawn_egg",
+        "F": "minecraft:camel_spawn_egg"
     },
     "result": {
         "id": "minecraft:bogged_spawn_egg",

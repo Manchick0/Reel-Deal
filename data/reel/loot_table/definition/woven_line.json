@@ -15,14 +15,32 @@
                                     "translate": "item.reel.woven_line"
                                 },
                                 "minecraft:item_model": "reel:woven_line",
+                                "minecraft:custom_data": {
+                                    "reel:identifier": "reel:woven_line"
+                                },
                                 "minecraft:max_stack_size": 1,
                                 "minecraft:rarity": "common",
                                 "minecraft:lore": [
                                     "",
                                     [
-                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
-                                        { "text": "\u0001", "color": "white", "font": "reel:specification", "italic": false },
-                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                                        {
+                                            "text": " ",
+                                            "color": "white",
+                                            "font": "minecraft:default",
+                                            "italic": false
+                                        },
+                                        {
+                                            "text": "\u0001",
+                                            "color": "white",
+                                            "font": "reel:specification",
+                                            "italic": false
+                                        },
+                                        {
+                                            "text": " ",
+                                            "color": "white",
+                                            "font": "minecraft:default",
+                                            "italic": false
+                                        },
                                         {
                                             "translate": "tooltip.reel.when_applied_as",
                                             "with": [
@@ -37,32 +55,17 @@
                                             "font": "minecraft:default",
                                             "italic": false
                                         },
-                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
+                                        {
+                                            "text": " ",
+                                            "color": "white",
+                                            "font": "minecraft:default",
+                                            "italic": false
+                                        }
                                     ],
                                     "",
                                     "§l §r§7   Too fragile to hold onto ",
                                     "§l §r§7   anything larger than the ",
                                     "§l §r§7   §ftiniest of fish§7. ",
-                                    "",
-                                    [
-                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
-                                        { "text": "\u0002", "color": "white", "font": "reel:specification", "italic": false },
-                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
-                                        {
-                                            "translate": "tooltip.reel.size",
-                                            "with": [
-                                                [
-                                                    { "text": "■", "color": "red", "italic": false },
-                                                    { "text": "□", "color": "dark_gray", "italic": false },
-                                                    { "text": "□", "color": "dark_gray", "italic": false }
-                                                ]
-                                            ],
-                                            "font": "minecraft:default",
-                                            "color": "dark_gray",
-                                            "italic": false
-                                        },
-                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
-                                    ],
                                     "",
                                     "§r§9Reel Deal"
                                 ]
