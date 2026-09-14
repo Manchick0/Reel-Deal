@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-NAME="Real Deal"
+NAME="Reel Deal"
 VERSION="1.0.0"
 
 node define-parts.js
