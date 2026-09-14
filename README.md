@@ -14,11 +14,28 @@ Fishing has historically been a notoriously monotone activity, with little to no
 
 Unlike most other fishing-related projects, the act of catching a fish isn't being changed. You still enjoy the vanilla fishing experience, just with a little more shine to it.
 
+> ⚙️ **Getting Started**
+>
+> The basic rod parts needed to get you going in the **Woven Line** and the **Iron Hook**. Craft the **Woven Line** out of 2x strings and a stick, and the **Iron Hook** out of an iron ingot and a nugget.
+> 
+> You may then upgrade your line to **Reinforced Line** with 8 iron nuggets, or just continue fishing – that's how you obtain the rest.
+
 # <center>Rod Parts 🪝</center>
 
 A single fishing rod is constructed out of three parts: A **line**, a **hook**, and _three whole sticks_. In order to not overcomplicate things – which some of us, developers, love doing – the line serves always a single purpose: it determines the **size** of the catch, and therefore follows a linear progression. A line is strictly better than the previous, isn't that neat?
 
 Hooks, on the other hand, is where you get creative. Each one has a unique ability that applies on any rod with that hook. Among others, they include the **Golden Hook**, which increases your odds at catching treasure, the **Cluster Hook**, which lets you catch minerals underground, or even the **Anchor Hook** which lets you catch fish alive.
+
+<center>
+
+| Hook    | How to Obtain                           |
+| ------- | --------------------------------------- |
+| Wooden  | Junk Catch                              |
+| Iron    | Crafting Table                          |
+| Cluster | Treasure Catch (Underground, `y <= 48`) |
+| Anchor  | Treasure Catch (Ocean)                  |
+| Golden  | Treasure Catch (Anywhere else)          |
+</center>
 
 # <center>Junk 'n Treasure 🪎</center>
 

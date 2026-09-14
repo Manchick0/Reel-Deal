@@ -17,53 +17,58 @@
                 "translate": "item.reel.iron_hook"
             },
             "minecraft:item_model": "reel:iron_hook",
+            "minecraft:custom_data": {
+                "reel:identifier": "reel:iron_hook"
+            },
+            "minecraft:max_stack_size": 1,
             "minecraft:rarity": "common",
             "minecraft:lore": [
                 "",
                 [
                     {
-                        "text": " ⚓ ",
-                        "color": "blue",
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "text": "\u0001",
+                        "color": "white",
+                        "font": "reel:specification",
+                        "italic": false
+                    },
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
                         "italic": false
                     },
                     {
                         "translate": "tooltip.reel.when_applied_as",
-                        "color": "gray",
-                        "italic": false
-                    },
-                    " ",
-                    {
-                        "translate": "tooltip.reel.hook",
-                        "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": ": ",
+                        "with": [
+                            {
+                                "translate": "tooltip.reel.hook",
+                                "color": "gray",
+                                "font": "minecraft:default",
+                                "italic": false
+                            }
+                        ],
                         "color": "dark_gray",
+                        "font": "minecraft:default",
                         "italic": false
                     },
-                    " "
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    }
                 ],
                 "",
-                [
-                    "    ",
-                    {
-                        "translate": "item.reel.iron_hook.description[0]",
-                        "color": "dark_gray",
-                        "italic": false
-                    },
-                    " "
-                ],
-                [
-                    "    ",
-                    {
-                        "translate": "item.reel.iron_hook.description[1]",
-                        "color": "dark_gray",
-                        "italic": false
-                    },
-                    " "
-                ],
-                ""
+                "§l §r§7   The §frecognized standard ",
+                "§l §r§7   among the professionals. ",
+                "",
+                "§r§9Reel Deal"
             ]
         }
     }
