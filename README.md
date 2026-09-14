@@ -26,4 +26,29 @@ Once upon a time, in the version 1.14, Mojang has added bamboo as a junk catch i
 
 Luckily, we aren't Mojang. So we took this idea and ran with it. Reel Deal introduces biome-specific junk loot tables, but also modifies the treasure loot table to be more inline with the modern game.
 
+
+<center>
+
+| Biome            | Junk                                                    |
+| :--------------- | :------------------------------------------------------ |
+| Everywhere       | Leather, Bones, Sticks and Clayballs                    |
+| Badlands         | Gold Nuggets and Flint                                  |
+| Birch Forest     | Honeycombs                                              |
+| Cold Biomes      | Rabbit Hides, Rabbit Feet, Snow Balls and Ice           |
+| Dark Forest      | Red and Brown Mushrooms and Emeralds                    |
+| Desert           | Dead Bushes, Rabbit Hides, and Short and Tall Dry Grass |
+| Flower Forest    | Small flowers                                           |
+| Jungle           | Bamboo, Cocoa Beans and Melon Slices                    |
+| Oceans           | Kelp and Ink Sacs                                       |
+| Warm Oceans      | Sea Pickles and Corals                                  |
+| Pale Garden      | Resin Clumps                                            |
+| Rivers           | Bone Meal, Sugar Cane and Ink Sacs                      |
+| Savanna          | Flint, Tall Grass and Armadillo Scutes                  |
+| Sunflower Plains | Sunflowers                                              |
+| Swamp            | Lily Pads, Redstone, Sugar and Slime Balls              |
+| Taiga            | Sweet Berries, Fern and Large Fern                      |
+| Underground      | Flint, String, Gunpowder and Pointed Dripstone          |
+
+</center>
+
 ![Contents](https://raw.githubusercontent.com/Manchick0/Reel-Deal/refs/heads/master/contents.png)
