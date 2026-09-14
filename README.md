@@ -26,7 +26,6 @@ Once upon a time, in the version 1.14, Mojang has added bamboo as a junk catch i
 
 Luckily, we aren't Mojang. So we took this idea and ran with it. Reel Deal introduces biome-specific junk loot tables, but also modifies the treasure loot table to be more inline with the modern game.
 
-
 <center>
 
 | Biome            | Junk                                                    |

@@ -31,9 +31,44 @@
                     "weight": 3
                 },
                 {
-                    "type": "minecraft:loot_table",
-                    "value": "reel:definition/golden_hook",
-                    "weight": 2
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:definition/cluster_hook",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "position": {
+                                            "y": {
+                                                "max": 48
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "weight": 2
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:definition/anchor_hook",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "#minecraft:is_ocean"
+                                    }
+                                }
+                            ],
+                            "weight": 2
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:definition/golden_hook",
+                            "weight": 2
+                        }
+                    ]
                 }
             ]
         }
