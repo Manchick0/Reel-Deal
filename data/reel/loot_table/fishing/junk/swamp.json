@@ -6,7 +6,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:lily_pad",
-                    "weight": 25
+                    "weight": 40
                 },
                 {
                     "type": "minecraft:item",
@@ -31,11 +31,6 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:slime_ball",
-                    "weight": 15
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:spider_eye",
                     "weight": 10
                 }
             ]

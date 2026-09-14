@@ -19,6 +19,21 @@
                     "weight": 10
                 },
                 {
+                    "type": "minecraft:item",
+                    "name": "minecraft:clay_ball",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ],
+                    "weight": 10
+                },
+                {
                     "type": "minecraft:alternatives",
                     "children": [
                         {
@@ -57,13 +72,26 @@
                                     "predicate": {
                                         "position": {
                                             "y": {
-                                                "max": 30
+                                                "max": 64
                                             }
                                         }
                                     }
                                 }
                             ],
-                            "weight": 65
+                            "weight": 55
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/taiga",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "#reel:junk/taiga"
+                                    }
+                                }
+                            ],
+                            "weight": 55
                         },
                         {
                             "type": "minecraft:loot_table",
@@ -76,7 +104,7 @@
                                     }
                                 }
                             ],
-                            "weight": 65
+                            "weight": 55
                         },
                         {
                             "type": "minecraft:loot_table",
@@ -89,7 +117,7 @@
                                     }
                                 }
                             ],
-                            "weight": 65
+                            "weight": 55
                         },
                         {
                             "type": "minecraft:loot_table",
@@ -102,7 +130,7 @@
                                     }
                                 }
                             ],
-                            "weight": 65
+                            "weight": 55
                         },
                         {
                             "type": "minecraft:loot_table",
@@ -115,7 +143,124 @@
                                     }
                                 }
                             ],
-                            "weight": 65
+                            "weight": 55
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/dark_forest",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "minecraft:dark_forest"
+                                    }
+                                }
+                            ],
+                            "weight": 55
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/pale_garden",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "minecraft:pale_garden"
+                                    }
+                                }
+                            ],
+                            "weight": 55
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/jungle",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "#reel:junk/jungle"
+                                    }
+                                }
+                            ],
+                            "weight": 55
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/ocean",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "#reel:junk/ocean"
+                                    }
+                                }
+                            ],
+                            "weight": 55
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/warm_ocean",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "#reel:junk/warm_ocean"
+                                    }
+                                }
+                            ],
+                            "weight": 55
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/savanna",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "#reel:junk/savanna"
+                                    }
+                                }
+                            ],
+                            "weight": 55
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/river",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "#reel:junk/river"
+                                    }
+                                }
+                            ],
+                            "weight": 55
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/badlands",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "#reel:junk/badlands"
+                                    }
+                                }
+                            ],
+                            "weight": 55
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "value": "reel:fishing/junk/desert",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:location_check",
+                                    "predicate": {
+                                        "biomes": "minecraft:desert"
+                                    }
+                                }
+                            ],
+                            "weight": 55
                         }
                     ]
                 }

@@ -1,0 +1,11 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:fisherman/3/salmon_emerald",
+        "reel:fisherman/fish/bullfish_emerald",
+        "reel:fisherman/fish/cobblefish_emerald",
+        "reel:fisherman/fish/deepfish_emerald",
+        "reel:fisherman/fish/fishroom_emerald",
+        "reel:fisherman/fish/icehorn_emerald"
+    ]
+}

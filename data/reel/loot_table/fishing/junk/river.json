@@ -5,7 +5,17 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:clay_ball",
+                    "name": "minecraft:bone_meal",
+                    "weight": 50
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:sugar_cane",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:ink_sac",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -16,17 +26,7 @@
                             }
                         }
                     ],
-                    "weight": 50
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:sugar_cane",
-                    "weight": 40
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:ink_sac",
-                    "weight": 10
+                    "weight": 20
                 }
             ]
         }

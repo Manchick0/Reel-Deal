@@ -6,12 +6,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:resin_clump",
-                    "weight": 60
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:stick",
-                    "weight": 40
+                    "weight": 100
                 }
             ]
         }

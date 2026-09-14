@@ -5,18 +5,23 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:bamboo",
-                    "weight": 50
+                    "name": "minecraft:dead_bush",
+                    "weight": 40
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:cocoa_beans",
+                    "name": "minecraft:rabbit_hide",
                     "weight": 25
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:melon_slice",
+                    "name": "minecraft:short_dry_grass",
                     "weight": 25
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:tall_dry_grass",
+                    "weight": 10
                 }
             ]
         }

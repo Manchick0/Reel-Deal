@@ -8,12 +8,16 @@ const HOOKS = JSON.parse(fs.readFileSync(path.join(process.cwd(), "hooks.json"))
 const DEFINITION_PATH = path.join(process.cwd(), "data/reel/loot_table/definition");
 const ADVANCEMENT_PATH = path.join(process.cwd(), "data/reel/advancement/recipes");
 const RECIPE_PATH = path.join(process.cwd(), "data/reel/recipe");
+const WANDERING_TRADES_PATH = path.join(process.cwd(), "data/reel/villager_trade/wandering_trader");
 const IDENTIFIER = /^([a-z0-9_.-]+):([a-z0-9/_.-]+)$/;
 
 function main() {
     for (const line of LINES) {
         definePart(line, "tooltip.reel.line");
         for (const hook of HOOKS) {
+            if ("price" in hook) {
+                defineTrade(hook);
+            }
             definePart(hook, "tooltip.reel.hook");
             defineRecipe(line, hook);
             defineAdvancement(line, hook);
@@ -219,7 +223,76 @@ function definePart({ type, identifier, rarity, description }, tooltip) {
         ]
     }
     console.log(`[+] Writing definition for ${identifier}...`)
+    fs.mkdirSync(path.dirname(destination), { recursive: true });
     fs.writeFileSync(`${destination}.json`, JSON.stringify(definition, null, 4));
+}
+
+/**
+ * @param {{ type: string, identifier: string, rarity?: string, price: number description: string[] }} candidate
+ */
+function defineTrade({ type, identifier, rarity, price, description }) {
+    const [namespace, name] = splitIdentifier(identifier);
+    const destination = path.join(WANDERING_TRADES_PATH, name);
+    const trade = {
+        "max_uses": 2.0,
+        "reputation_discount": 0.05,
+        "wants": {
+            "count": price,
+            "id": "minecraft:emerald"
+        },
+        "gives": {
+            "id": `${type}`,
+            "components": {
+                "!minecraft:entity_data": {},
+                "minecraft:item_name": {
+                    "translate": `item.${namespace}.${name}`
+                },
+                "minecraft:item_model": `${namespace}:${name}`,
+                "minecraft:custom_data": {
+                    "reel:identifier": `${namespace}:${name}`
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:rarity": rarity ?? "common",
+                "minecraft:lore": [
+                    "",
+                    [
+                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                        { "text": "\u0001", "color": "white", "font": "reel:specification", "italic": false },
+                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                        {
+                            "translate": "tooltip.reel.when_applied_as",
+                            "with": [
+                                {
+                                    translate: `tooltip.reel.hook`,
+                                    color: "gray",
+                                    font: "minecraft:default",
+                                    italic: false
+                                }
+                            ],
+                            "color": "dark_gray",
+                            "font": "minecraft:default",
+                            "italic": false
+                        },
+                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
+                    ],
+                    "",
+                    ...indentDescription(description),
+                    "",
+                    "§r§9Reel Deal"
+                ]
+            }
+        }
+    };
+    console.log(`[+] Writing wandering trade for ${identifier}...`)
+    fs.mkdirSync(path.dirname(destination), { recursive: true });
+    fs.writeFileSync(`${destination}.json`, JSON.stringify(trade, null, 4));
+}
+
+/**
+ * @param {{ type: string, identifier: string, rarity?: string, description: string[] }} candidate
+ */
+function substituteTrade(candidate) {
+
 }
 
 /**

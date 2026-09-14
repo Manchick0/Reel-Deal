@@ -6,17 +6,12 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:flint",
-                    "weight": 40
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:dead_bush",
-                    "weight": 30
+                    "weight": 60
                 },
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:tall_grass",
-                    "weight": 20
+                    "weight": 30
                 },
                 {
                     "type": "minecraft:item",

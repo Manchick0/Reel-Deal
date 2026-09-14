@@ -3,6 +3,7 @@
         "type": "minecraft:allay_spawn_egg",
         "identifier": "reel:wooden_hook",
         "rarity": "common",
+        "price": 6,
         "description": [
             "Too weak to hold onto",
             "any fish, only §fjunk",
@@ -13,6 +14,7 @@
         "type": "minecraft:armadillo_spawn_egg",
         "identifier": "reel:iron_hook",
         "rarity": "common",
+        "price": 3,
         "description": [
             "The §frecognized standard",
             "among the professionals."
@@ -22,6 +24,7 @@
         "type": "minecraft:axolotl_spawn_egg",
         "identifier": "reel:golden_hook",
         "rarity": "common",
+        "price": 15,
         "description": [
             "Doubles the odds of",
             "catching §ftreasure§7."
@@ -31,6 +34,7 @@
         "type": "minecraft:bat_spawn_egg",
         "identifier": "reel:cluster_hook",
         "rarity": "uncommon",
+        "price": 18,
         "description": [
             "Catch §fminerals §7instead ",
             "of fish when fishing ",
@@ -41,6 +45,7 @@
         "type": "minecraft:breeze_spawn_egg",
         "identifier": "reel:anchor_hook",
         "rarity": "epic",
+        "price": 24,
         "description": [
             "Large enough to pull",
             "the fish out §falive§7."

@@ -6,17 +6,12 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:red_mushroom",
-                    "weight": 30
+                    "weight": 45
                 },
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:brown_mushroom",
-                    "weight": 30
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:stick",
-                    "weight": 30
+                    "weight": 45
                 },
                 {
                     "type": "minecraft:item",

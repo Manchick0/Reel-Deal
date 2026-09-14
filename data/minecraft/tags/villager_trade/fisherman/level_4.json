@@ -1,6 +1,8 @@
 {
     "replace": false,
     "values": [
-        "reel:fiber_emerald"
+        "reel:fisherman/fiber_emerald",
+        "reel:fisherman/heart_of_the_sea_emerald",
+        "reel:fisherman/nautilus_shell_emerald"
     ]
 }

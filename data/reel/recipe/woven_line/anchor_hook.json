@@ -77,7 +77,7 @@
                     },
                     {
                         "translate": "item.reel.anchor_hook",
-                        "color": "aqua",
+                        "color": "light_purple",
                         "font": "minecraft:default",
                         "italic": false
                     },

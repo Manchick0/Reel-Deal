@@ -1,0 +1,72 @@
+{
+    "max_uses": 2,
+    "reputation_discount": 0.05,
+    "wants": {
+        "count": 6,
+        "id": "minecraft:emerald"
+    },
+    "gives": {
+        "id": "minecraft:allay_spawn_egg",
+        "components": {
+            "!minecraft:entity_data": {},
+            "minecraft:item_name": {
+                "translate": "item.reel.wooden_hook"
+            },
+            "minecraft:item_model": "reel:wooden_hook",
+            "minecraft:custom_data": {
+                "reel:identifier": "reel:wooden_hook"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:rarity": "common",
+            "minecraft:lore": [
+                "",
+                [
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "text": "\u0001",
+                        "color": "white",
+                        "font": "reel:specification",
+                        "italic": false
+                    },
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "translate": "tooltip.reel.when_applied_as",
+                        "with": [
+                            {
+                                "translate": "tooltip.reel.hook",
+                                "color": "gray",
+                                "font": "minecraft:default",
+                                "italic": false
+                            }
+                        ],
+                        "color": "dark_gray",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    }
+                ],
+                "",
+                "§l §r§7   Too weak to hold onto ",
+                "§l §r§7   any fish, only §fjunk ",
+                "§l §r§7   can be promised. ",
+                "",
+                "§r§9Reel Deal"
+            ]
+        }
+    }
+}

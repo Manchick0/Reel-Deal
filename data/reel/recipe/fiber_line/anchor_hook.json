@@ -51,8 +51,7 @@
                     }
                 ],
                 "",
-                "§l §r§7   The fibers weave together ",
-                "§l §r§7   so tightly, they can hold ",
+                "§l §r§7   The tight fibers can hold ",
                 "§l §r§7   onto some §fbiome-specific ",
                 "§l §r§7   §fspecies§7. ",
                 "",
@@ -78,7 +77,7 @@
                     },
                     {
                         "translate": "item.reel.anchor_hook",
-                        "color": "aqua",
+                        "color": "light_purple",
                         "font": "minecraft:default",
                         "italic": false
                     },

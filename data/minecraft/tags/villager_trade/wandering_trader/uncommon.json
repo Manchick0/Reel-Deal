@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "reel:wandering_trader/anchor_hook",
+        "reel:wandering_trader/cluster_hook",
+        "reel:wandering_trader/golden_hook",
+        "reel:wandering_trader/iron_hook",
+        "reel:wandering_trader/wooden_hook"
+    ]
+}
