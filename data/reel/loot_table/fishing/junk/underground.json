@@ -1,7 +1,7 @@
 {
     "pools": [
         {
-            "rolls": 1.0,
+            "rolls": 1,
             "entries": [
                 {
                     "type": "minecraft:item",
@@ -26,29 +26,27 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:iron_pickaxe",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_damage",
-                            "damage": {
-                                "min": 0.2,
-                                "max": 0.8
-                            }
+                    "modifier": {
+                        "type": "minecraft:set_damage",
+                        "damage": {
+                            "type": "minecraft:uniform",
+                            "min": 0.2,
+                            "max": 0.8
                         }
-                    ],
+                    },
                     "weight": 5
                 },
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:glow_ink_sac",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_damage",
-                            "damage": {
-                                "min": 0.2,
-                                "max": 0.8
-                            }
+                    "modifier": {
+                        "type": "minecraft:set_damage",
+                        "damage": {
+                            "type": "minecraft:uniform",
+                            "min": 0.2,
+                            "max": 0.8
                         }
-                    ],
+                    },
                     "weight": 5
                 }
             ]

@@ -32,7 +32,7 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "reel:reinforced_line/cluster_hook"
+                "recipes": "reel:reinforced_line/cluster_hook"
             }
         }
     },

@@ -1,0 +1,125 @@
+{
+    "given_item_modifier": [
+        {
+            "type": "minecraft:enchant_with_levels",
+            "include_additional_cost_component": true,
+            "levels": {
+                "type": "minecraft:uniform",
+                "max": 19,
+                "min": 5
+            },
+            "options": "#minecraft:on_traded_equipment"
+        },
+        {
+            "type": "minecraft:filtered",
+            "item_filter": {
+                "items": "minecraft:fishing_rod",
+                "predicates": {
+                    "minecraft:enchantments": [{}]
+                }
+            },
+            "on_fail": {
+                "type": "minecraft:discard"
+            }
+        }
+    ],
+    "gives": {
+        "id": "minecraft:fishing_rod",
+        "components": {
+            "minecraft:lore": [
+                "",
+                [
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "text": "\u0001",
+                        "color": "white",
+                        "font": "reel:specification",
+                        "bold": false,
+                        "italic": false
+                    },
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "translate": "item.reel.reinforced_line",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    }
+                ],
+                "",
+                "§l §r§7   Sturdy and reliable to ",
+                "§l §r§7   hold onto §ffish of any ",
+                "§l §r§7   §fgenus§7. ",
+                "",
+                [
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "text": "\u0001",
+                        "color": "white",
+                        "font": "reel:specification",
+                        "bold": false,
+                        "italic": false
+                    },
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "translate": "item.reel.iron_hook",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    },
+                    {
+                        "text": " ",
+                        "color": "white",
+                        "font": "minecraft:default",
+                        "italic": false
+                    }
+                ],
+                "",
+                "§l §r§7   The §frecognized standard ",
+                "§l §r§7   among the professionals. ",
+                "",
+                "§r§9Reel Deal"
+            ],
+            "minecraft:custom_data": {
+                "reel:constructed": true,
+                "reel:line": "reel:reinforced_line",
+                "reel:hook": "reel:iron_hook"
+            },
+            "minecraft:custom_model_data": {
+                "strings": ["reel:reinforced_line", "reel:iron_hook"]
+            }
+        }
+    },
+    "max_uses": 3,
+    "reputation_discount": 0.2,
+    "wants": {
+        "count": 3,
+        "id": "minecraft:emerald"
+    },
+    "xp": 10
+}

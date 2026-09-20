@@ -144,7 +144,7 @@ function defineAdvancement(line, hook) {
             "has_the_recipe": {
                 "trigger": "minecraft:recipe_unlocked",
                 "conditions": {
-                    "recipe": `reel:${names[0]}/${names[1]}`
+                    "recipes": `reel:${names[0]}/${names[1]}`
                 }
             },
         },
@@ -173,50 +173,48 @@ function definePart({ type, identifier, rarity, description }, tooltip) {
                     {
                         "type": "minecraft:item",
                         "name": `${type}`,
-                        "functions": [
-                            {
-                                "function": "minecraft:set_components",
-                                "components": {
-                                    "!minecraft:entity_data": {},
-                                    "minecraft:item_name": {
-                                        "translate": `item.${namespace}.${name}`
-                                    },
-                                    "minecraft:item_model": `${namespace}:${name}`,
-                                    "minecraft:custom_data": {
-                                        "reel:identifier": `${namespace}:${name}`
-                                    },
-                                    "minecraft:max_stack_size": 1,
-                                    "minecraft:rarity": rarity ?? "common",
-                                    "minecraft:lore": [
-                                        "",
-                                        [
-                                            { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
-                                            { "text": "\u0001", "color": "white", "font": "reel:specification", "italic": false },
-                                            { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
-                                            {
-                                                "translate": "tooltip.reel.when_applied_as",
-                                                "with": [
-                                                    {
-                                                        translate: `${tooltip}`,
-                                                        color: "gray",
-                                                        font: "minecraft:default",
-                                                        italic: false
-                                                    }
-                                                ],
-                                                "color": "dark_gray",
-                                                "font": "minecraft:default",
-                                                "italic": false
-                                            },
-                                            { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
-                                        ],
-                                        "",
-                                        ...indentDescription(description),
-                                        "",
-                                        "§r§9Reel Deal"
-                                    ]
-                                }
+                        "modifier": {
+                            "type": "minecraft:set_components",
+                            "components": {
+                                "!minecraft:entity_data": {},
+                                "minecraft:item_name": {
+                                    "translate": `item.${namespace}.${name}`
+                                },
+                                "minecraft:item_model": `${namespace}:${name}`,
+                                "minecraft:custom_data": {
+                                    "reel:identifier": `${namespace}:${name}`
+                                },
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:rarity": rarity ?? "common",
+                                "minecraft:lore": [
+                                    "",
+                                    [
+                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                                        { "text": "\u0001", "color": "white", "font": "reel:specification", "italic": false },
+                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false },
+                                        {
+                                            "translate": "tooltip.reel.when_applied_as",
+                                            "with": [
+                                                {
+                                                    "translate": `${tooltip}`,
+                                                    "color": "gray",
+                                                    "font": "minecraft:default",
+                                                    "italic": false
+                                                }
+                                            ],
+                                            "color": "dark_gray",
+                                            "font": "minecraft:default",
+                                            "italic": false
+                                        },
+                                        { "text": "\u0020", "color": "white", "font": "minecraft:default", "italic": false }
+                                    ],
+                                    "",
+                                    ...indentDescription(description),
+                                    "",
+                                    "§r§9Reel Deal"
+                                ]
                             }
-                        ]
+                        }
                     }
                 ]
             }
@@ -263,10 +261,10 @@ function defineTrade({ type, identifier, rarity, price, description }) {
                             "translate": "tooltip.reel.when_applied_as",
                             "with": [
                                 {
-                                    translate: `tooltip.reel.hook`,
-                                    color: "gray",
-                                    font: "minecraft:default",
-                                    italic: false
+                                    "translate": `tooltip.reel.hook`,
+                                    "color": "gray",
+                                    "font": "minecraft:default",
+                                    "italic": false
                                 }
                             ],
                             "color": "dark_gray",
@@ -286,13 +284,6 @@ function defineTrade({ type, identifier, rarity, price, description }) {
     console.log(`[+] Writing wandering trade for ${identifier}...`)
     fs.mkdirSync(path.dirname(destination), { recursive: true });
     fs.writeFileSync(`${destination}.json`, JSON.stringify(trade, null, 4));
-}
-
-/**
- * @param {{ type: string, identifier: string, rarity?: string, description: string[] }} candidate
- */
-function substituteTrade(candidate) {
-
 }
 
 /**

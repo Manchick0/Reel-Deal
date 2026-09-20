@@ -1,7 +1,7 @@
 {
     "pools": [
         {
-            "rolls": 1.0,
+            "rolls": 1,
             "entries": [
                 {
                     "type": "minecraft:item",
@@ -26,22 +26,21 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:redstone",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:location_check",
-                            "predicate": {
-                                "position": {
-                                    "y": {
-                                        "max": 16
-                                    }
+                    "condition": {
+                        "type": "minecraft:location_check",
+                        "predicate": {
+                            "position": {
+                                "y": {
+                                    "max": 16
                                 }
                             }
                         }
-                    ],
-                    "functions": [
+                    },
+                    "modifier": [
                         {
-                            "function": "minecraft:set_count",
+                            "type": "minecraft:set_count",
                             "count": {
+                                "type": "minecraft:uniform",
                                 "min": 4,
                                 "max": 5
                             }
@@ -52,22 +51,21 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:lapis_lazuli",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:location_check",
-                            "predicate": {
-                                "position": {
-                                    "y": {
-                                        "max": 30
-                                    }
+                    "condition": {
+                        "type": "minecraft:location_check",
+                        "predicate": {
+                            "position": {
+                                "y": {
+                                    "max": 30
                                 }
                             }
                         }
-                    ],
-                    "functions": [
+                    },
+                    "modifier": [
                         {
-                            "function": "minecraft:set_count",
+                            "type": "minecraft:set_count",
                             "count": {
+                                "type": "minecraft:uniform",
                                 "min": 4,
                                 "max": 9
                             }
@@ -77,32 +75,53 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:diamond",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:location_check",
-                            "predicate": {
-                                "position": {
-                                    "y": {
-                                        "max": 16
-                                    }
+                    "name": "minecraft:amethyst_shard",
+                    "condition": {
+                        "type": "minecraft:location_check",
+                        "predicate": {
+                            "position": {
+                                "y": {
+                                    "max": 30
                                 }
                             }
                         }
+                    },
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
                     ],
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "condition": {
+                        "type": "minecraft:location_check",
+                        "predicate": {
+                            "position": {
+                                "y": {
+                                    "max": 16
+                                }
+                            }
+                        }
+                    },
                     "weight": 5
                 },
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:emerald",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:location_check",
-                            "predicate": {
-                                "biomes": "#reel:is_mountains"
-                            }
+                    "condition": {
+                        "type": "minecraft:location_check",
+                        "predicate": {
+                            "biomes": "#reel:is_mountains"
                         }
-                    ],
+                    },
                     "weight": 10
                 }
             ]

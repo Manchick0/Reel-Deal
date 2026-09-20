@@ -10,9 +10,9 @@
                         {
                             "type": "minecraft:loot_table",
                             "value": "reel:fishing/fish/fiber",
-                            "conditions": [
+                            "condition":
                                 {
-                                    "condition": "minecraft:match_tool",
+                                    "type": "minecraft:match_tool",
                                     "predicate": {
                                         "predicates": {
                                             "minecraft:custom_data": {
@@ -21,14 +21,14 @@
                                         }
                                     }
                                 }
-                            ]
+                            
                         },
                         {
                             "type": "minecraft:loot_table",
                             "value": "reel:fishing/fish/reinforced",
-                            "conditions": [
+                            "condition": 
                                 {
-                                    "condition": "minecraft:match_tool",
+                                    "type": "minecraft:match_tool",
                                     "predicate": {
                                         "predicates": {
                                             "minecraft:custom_data": {
@@ -37,7 +37,7 @@
                                         }
                                     }
                                 }
-                            ]
+                            
                         },
                         {
                             "type": "minecraft:loot_table",

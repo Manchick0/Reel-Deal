@@ -32,7 +32,7 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "reel:fiber_line/golden_hook"
+                "recipes": "reel:fiber_line/golden_hook"
             }
         }
     },

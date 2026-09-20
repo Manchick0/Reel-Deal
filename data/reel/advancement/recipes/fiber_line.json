@@ -19,13 +19,13 @@
         "has_horizontal": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "reel:fiber_line_horizonzal"
+                "recipes": "reel:fiber_line_horizonzal"
             }
         },
         "has_vertical": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "reel:fiber_line_vertical"
+                "recipes": "reel:fiber_line_vertical"
             }
         }
     },

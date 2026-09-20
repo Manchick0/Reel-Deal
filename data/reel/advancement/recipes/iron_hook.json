@@ -14,7 +14,7 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "reel:iron_hook"
+                "recipes": "reel:iron_hook"
             }
         }
     },

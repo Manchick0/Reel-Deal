@@ -14,94 +14,94 @@
         ]
     },
     "criteria": {
-        "reel:woven/anchor": {
+        "reel:woven_line/anchor_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:woven/anchor"
+                "recipes": "reel:woven_line/anchor_hook"
             }
         },
-        "reel:woven/cluster": {
+        "reel:woven_line/cluster_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:woven/cluster"
+                "recipes": "reel:woven_line/cluster_hook"
             }
         },
-        "reel:woven/golden": {
+        "reel:woven_line/golden_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:woven/golden"
+                "recipes": "reel:woven_line/golden_hook"
             }
         },
-        "reel:woven/iron": {
+        "reel:woven_line/iron_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:woven/iron"
+                "recipes": "reel:woven_line/iron_hook"
             }
         },
-        "reel:woven/wooden": {
+        "reel:woven_line/wooden_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:woven/wooden"
+                "recipes": "reel:woven_line/wooden_hook"
             }
         },
-        "reel:reinforced/anchor": {
+        "reel:reinforced_line/anchor_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:reinforced/anchor"
+                "recipes": "reel:reinforced_line/anchor_hook"
             }
         },
-        "reel:reinforced/cluster": {
+        "reel:reinforced_line/cluster_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:reinforced/cluster"
+                "recipes": "reel:reinforced_line/cluster_hook"
             }
         },
-        "reel:reinforced/golden": {
+        "reel:reinforced_line/golden_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:reinforced/golden"
+                "recipes": "reel:reinforced_line/golden_hook"
             }
         },
-        "reel:reinforced/iron": {
+        "reel:reinforced_line/iron_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:reinforced/iron"
+                "recipes": "reel:reinforced_line/iron_hook"
             }
         },
-        "reel:reinforced/wooden": {
+        "reel:reinforced_line/wooden_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:reinforced/wooden"
+                "recipes": "reel:reinforced_line/wooden_hook"
             }
         },
-        "reel:fiber/anchor": {
+        "reel:fiber_line/anchor_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:fiber/anchor"
+                "recipes": "reel:fiber_line/anchor_hook"
             }
         },
-        "reel:fiber/cluster": {
+        "reel:fiber_line/cluster_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:fiber/cluster"
+                "recipes": "reel:fiber_line/cluster_hook"
             }
         },
-        "reel:fiber/golden": {
+        "reel:fiber_line/golden_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:fiber/golden"
+                "recipes": "reel:fiber_line/golden_hook"
             }
         },
-        "reel:fiber/iron": {
+        "reel:fiber_line/iron_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:fiber/iron"
+                "recipes": "reel:fiber_line/iron_hook"
             }
         },
-        "reel:fiber/wooden": {
+        "reel:fiber_line/wooden_hook": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "reel:fiber/wooden"
+                "recipes": "reel:fiber_line/wooden_hook"
             }
         }
     },

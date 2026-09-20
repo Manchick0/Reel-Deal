@@ -1,18 +1,16 @@
 {
     "pools": [
         {
-            "rolls": 1.0,
+            "rolls": 1,
             "entries": [
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:book",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_with_levels",
-                            "options": "#minecraft:on_random_loot",
-                            "levels": 30
-                        }
-                    ],
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "options": "#minecraft:on_random_loot",
+                        "levels": 30
+                    },
                     "weight": 65
                 },
                 {
@@ -36,31 +34,27 @@
                         {
                             "type": "minecraft:loot_table",
                             "value": "reel:definition/cluster_hook",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:location_check",
-                                    "predicate": {
-                                        "position": {
-                                            "y": {
-                                                "max": 48
-                                            }
+                            "condition": {
+                                "type": "minecraft:location_check",
+                                "predicate": {
+                                    "position": {
+                                        "y": {
+                                            "max": 48
                                         }
                                     }
                                 }
-                            ],
+                            },
                             "weight": 2
                         },
                         {
                             "type": "minecraft:loot_table",
                             "value": "reel:definition/anchor_hook",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:location_check",
-                                    "predicate": {
-                                        "biomes": "#minecraft:is_ocean"
-                                    }
+                            "condition": {
+                                "type": "minecraft:location_check",
+                                "predicate": {
+                                    "biomes": "#minecraft:is_ocean"
                                 }
-                            ],
+                            },
                             "weight": 2
                         },
                         {

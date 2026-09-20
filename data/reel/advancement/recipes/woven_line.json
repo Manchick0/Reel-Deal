@@ -14,13 +14,13 @@
         "has_horizontal": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "reel:woven_line_horizontal"
+                "recipes": "reel:woven_line_horizontal"
             }
         },
         "has_vertical": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "reel:woven_line_vertical"
+                "recipes": "reel:woven_line_vertical"
             }
         }
     },

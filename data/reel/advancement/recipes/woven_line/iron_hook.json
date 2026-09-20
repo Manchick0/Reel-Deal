@@ -32,7 +32,7 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "reel:woven_line/iron_hook"
+                "recipes": "reel:woven_line/iron_hook"
             }
         }
     },

@@ -10,34 +10,30 @@
                         {
                             "type": "minecraft:loot_table",
                             "value": "reel:fishing/mineral/fiber",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:match_tool",
-                                    "predicate": {
-                                        "predicates": {
-                                            "minecraft:custom_data": {
-                                                "reel:line": "reel:fiber_line"
-                                            }
+                            "condition": {
+                                "type": "minecraft:match_tool",
+                                "predicate": {
+                                    "predicates": {
+                                        "minecraft:custom_data": {
+                                            "reel:line": "reel:fiber_line"
                                         }
                                     }
                                 }
-                            ]
+                            }
                         },
                         {
                             "type": "minecraft:loot_table",
                             "value": "reel:fishing/mineral/reinforced",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:match_tool",
-                                    "predicate": {
-                                        "predicates": {
-                                            "minecraft:custom_data": {
-                                                "reel:line": "reel:reinforced_line"
-                                            }
+                            "condition": {
+                                "type": "minecraft:match_tool",
+                                "predicate": {
+                                    "predicates": {
+                                        "minecraft:custom_data": {
+                                            "reel:line": "reel:reinforced_line"
                                         }
                                     }
                                 }
-                            ]
+                            }
                         },
                         {
                             "type": "minecraft:loot_table",

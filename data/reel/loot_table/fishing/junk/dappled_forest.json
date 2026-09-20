@@ -5,18 +5,18 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:sweet_berries",
+                    "name": "minecraft:brown_mushroom",
                     "weight": 50
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:fern",
-                    "weight": 40
+                    "name": "minecraft:red_shrub",
+                    "weight": 30
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:large_fern",
-                    "weight": 10
+                    "name": "minecraft:shelf_mushroom",
+                    "weight": 20
                 }
             ]
         }
