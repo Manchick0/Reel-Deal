@@ -60,6 +60,7 @@ Luckily, we aren't Mojang. So we took this idea and ran with it. Reel Deal intro
 | Pale Garden      | Resin Clumps                                            |
 | Rivers           | Bone Meal, Sugar Cane and Ink Sacs                      |
 | Savanna          | Flint, Tall Grass and Armadillo Scutes                  |
+| Dappled Forest   | Brown Mushrooms, Red Shrubs, Shelf Mushrooms            |
 | Sunflower Plains | Sunflowers                                              |
 | Swamp            | Lily Pads, Redstone, Sugar and Slime Balls              |
 | Taiga            | Sweet Berries, Fern and Large Fern                      |
