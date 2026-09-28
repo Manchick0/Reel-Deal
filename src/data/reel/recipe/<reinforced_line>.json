@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "NNN",
+        "NLN",
+        "NNN"
+    ],
+    "category": "equipment",
+    "key": {
+        "L": "minecraft:bee_spawn_egg",
+        "N": "minecraft:iron_nugget"
+    },
+    "result": {
+        "id": "minecraft:blaze_spawn_egg",
+        "components": <line(|reel:reinforced_line|)>
+    }
+}

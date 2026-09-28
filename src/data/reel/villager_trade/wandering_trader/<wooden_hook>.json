@@ -1,0 +1,12 @@
+{
+    "max_uses": 2,
+    "reputation_discount": 0.05,
+    "wants": {
+        "count": 6,
+        "id": "minecraft:emerald"
+    },
+    "gives": {
+        "id": "minecraft:allay_spawn_egg",
+        "components": <hook(|reel:wooden_hook|)>
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "FLF",
+        "   "
+    ],
+    "category": "equipment",
+    "group": "reel:fiber_line",
+    "key": {
+        "L": "minecraft:blaze_spawn_egg",
+        "F": "minecraft:camel_spawn_egg"
+    },
+    "result": {
+        "id": "minecraft:bogged_spawn_egg",
+        "components": <line(|reel:fiber_line|)>
+    }
+}

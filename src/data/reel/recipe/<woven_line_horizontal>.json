@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "SIS",
+        "   "
+    ],
+    "category": "equipment",
+    "group": "reel:woven_line",
+    "key": {
+        "S": "minecraft:string",
+        "I": "minecraft:stick"
+    },
+    "result": {
+        "id": "minecraft:bee_spawn_egg",
+        "components": <line(|reel:woven_line|)>
+    }
+}

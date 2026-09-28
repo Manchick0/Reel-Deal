@@ -1,0 +1,17 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bat_spawn_egg",
+                    "modifier": {
+                        "type": "minecraft:set_components",
+                        "components": <hook(|reel:cluster_hook|)>
+                    }
+                }
+            ]
+        }
+    ]
+}

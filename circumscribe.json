@@ -1,0 +1,7 @@
+{
+    "structure": {
+        "root": "./src",
+        "build": "./build"
+    },
+    "mirror": true
+}

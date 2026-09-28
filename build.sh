@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
+NAME=$(circumscribe evaluate name)
+VERSION=$(circumscribe evaluate version)
 
-NAME="Reel Deal"
-VERSION="1.1.0"
-
-rm *.zip
-node define-parts.js
-echo "{
-    \"pack\": {
-        \"description\": \"§o*An incredibly floppy bassline*\n§8@Manchick | v§7$VERSION\",
-        \"max_format\": [121, 0],
-        \"min_format\": [121, 0]
-    }
-}" > pack.mcmeta
-zip "$NAME $VERSION.zip" -r data pack.png pack.mcmeta
+rm -f *.zip
+if circumscribe; then
+    cd build && zip ../"$NAME $VERSION.zip" -r data pack.mcmeta pack.png && cd ..
+fi

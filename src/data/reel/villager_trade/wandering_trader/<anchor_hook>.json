@@ -1,0 +1,12 @@
+{
+    "max_uses": 2,
+    "reputation_discount": 0.05,
+    "wants": {
+        "count": 24,
+        "id": "minecraft:emerald"
+    },
+    "gives": {
+        "id": "minecraft:breeze_spawn_egg",
+        "components": <hook(|reel:anchor_hook|)>
+    }
+}

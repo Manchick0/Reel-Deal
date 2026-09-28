@@ -1,0 +1,458 @@
+# General
+def name: |Reel Deal|
+def version: |1.1.0|
+
+#
+# Compute the translation key for the given `identifier`
+# in the form of `<category>.<namespace>.<path>`:
+#
+# translation_key(|item|, |minecraft:apple|) == |item.minecraft.apple|
+#
+def translation_key(category, identifier):
+    match /^(.+?):(.+)$/ as namespace, path in identifier: |<category>.<namespace>.<path>|
+
+#
+# Dispatch the color associated with the given `rarity`:
+#
+# rarity_color(|common|) == |white|
+#
+def rarity_color(rarity: |common| + |uncommon| + |rare| + |epic|):
+    if rarity == |epic|:
+        |light_purple|
+    else if rarity == |rare|:
+        |aqua|
+    else if rarity == |uncommon|:
+        |yellow|
+    else
+        |white|
+
+#
+# Dispatch the rarity of the hook identified by
+# the given `identifier`:
+#
+# hook_rarity(|reel:iron_hook|) == |common|
+#
+def hook_rarity(identifier):
+    if identifier == |reel:anchor_hook|:
+        |epic|
+    else if identifier == |reel:cluster_hook|:
+        |uncommon|
+    else 
+        |common|
+
+#
+# Dispatch the rarity of the line identified by
+# the given `identifier`:
+#
+# line_rarity(|reel:woven_line|) == |common|
+#
+def line_rarity(identifier):
+    # All lines are currently common ¯\_(.-.)_/¯
+    |common|
+
+#
+# Dispatch the description of the hook identified by
+# the given `identifier`:
+#
+# hook_description(|reel:iron_hook|) == |...|
+#
+def hook_description(identifier):
+    if identifier == |reel:anchor_hook|: |
+        "§l §r§7   Large enough to pull ",
+        "§l §r§7   the fish out §falive§7. "
+    | else if identifier == |reel:cluster_hook|: |
+        "§l §r§7   Catch §fminerals §7instead  ",
+        "§l §r§7   of fish when fishing  ",
+        "§l §r§7   underground§7.  "
+    | else if identifier == |reel:golden_hook|: |
+        "§l §r§7   Doubles the odds of ",
+        "§l §r§7   catching §ftreasure§7. "
+    | else if identifier == |reel:iron_hook|: |
+        "§l §r§7   The §frecognized standard ",
+        "§l §r§7   among the professionals. "
+    | else |
+        "§l §r§7   Too weak to hold onto ",
+        "§l §r§7   any fish, only §fjunk ",
+        "§l §r§7   can be promised. "
+    |
+
+#
+# Dispatch the description of the line identified by
+# the given `identifier`:
+#
+# line_description(|reel:woven_line|) == |...|
+#
+def line_description(identifier):
+    if identifier == |reel:fiber_line|: |
+        "§l §r§7   The tight fibers can hold ",
+        "§l §r§7   onto some §fbiome-specific ",
+        "§l §r§7   §fspecies§7. "
+    | else if identifier == |reel:reinforced_line|: |
+        "§l §r§7   Sturdy and reliable to ",
+        "§l §r§7   hold onto §ffish of any ",
+        "§l §r§7   §fgenus§7. "
+    | else |
+        "§l §r§7   Too fragile to hold onto ",
+        "§l §r§7   anything larger than the ",
+        "§l §r§7   §ftiniest of fish§7. "
+    |
+
+#
+# Dispatch the size of the line identified by
+# the given `identifier`:
+#
+# line_size(|reel:woven_line|) == |...|
+#
+def line_size(identifier):
+    if identifier == |reel:fiber_line|:
+        |large|
+    else if identifier == |reel:reinforced_line|:
+        |medium|
+    else
+        |small|
+
+#
+# Dispatch the text component used to visually the given
+# `size` in the tooltip.
+#
+# size_description(|small|) == |...|
+#
+def size_description(size: |small| + |medium| + |large|):
+    if size == |large|: |
+        [
+            { "text": "□", "color": "dark_gray", "italic": false },
+            { "text": "□", "color": "dark_gray", "italic": false },
+            { "text": "■", "color": "green",     "italic": false }
+        ]
+    | else if size == |medium|: |
+        [
+            { "text": "□", "color": "dark_gray", "italic": false },
+            { "text": "■", "color": "yellow",    "italic": false },
+            { "text": "□", "color": "dark_gray", "italic": false }
+        ]
+    | else |
+        [
+            { "text": "■", "color": "red",       "italic": false },
+            { "text": "□", "color": "dark_gray", "italic": false },
+            { "text": "□", "color": "dark_gray", "italic": false }
+        ]
+    |
+
+#
+# Compute the components of a fishing rod
+# constructed from the given `line` and `hook`.
+#
+# construct(|reel:woven_line|, |reel:iron_hook|) == |...|
+#
+def construct(line, hook): |{
+    "minecraft:lore": [
+        "",
+        [
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "text": "\\u0001",
+                "color": "white",
+                "font": "reel:specification",
+                "bold": false,
+                "italic": false
+            },
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "translate": "<translation_key(|item|, line)>",
+                "color": "<rarity_color(line_rarity(line))>",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            }
+        ],
+        "",
+        <line_description(line)>,
+        "",
+        [
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "text": "\\u0002",
+                "color": "white",
+                "font": "reel:specification",
+                "italic": false
+            },
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "translate": "tooltip.reel.size",
+                "with": [
+                    <size_description(line_size(line))>
+                ],
+                "color": "dark_gray",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            }
+        ],
+        [
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "text": "\\u0001",
+                "font": "reel:delimiter",
+                "italic": false,
+                "color": "#222222"
+            },
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            }
+        ],
+        [
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "text": "\\u0001",
+                "color": "white",
+                "font": "reel:specification",
+                "bold": false,
+                "italic": false
+            },
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "translate": "<translation_key(|item|, hook)>",
+                "color": "<rarity_color(hook_rarity(hook))>",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            }
+        ],
+        "",
+        <hook_description(hook)>,
+        "",
+        "§r§9Reel Deal"
+    ],
+    "minecraft:custom_data": {
+        "reel:constructed": true,
+        "reel:line": "<line>",
+        "reel:hook": "<hook>"
+    },
+    "minecraft:custom_model_data": {
+        "strings": [
+            "<line>",
+            "<hook>"
+        ]
+    }
+}|
+
+#
+# Compute the components of a hook identified by
+# the given `identifier`.
+#
+# hook(|reel:iron_hook|) == |...|
+#
+def hook(identifier) : |{
+    "!minecraft:entity_data": {},
+    "minecraft:item_name": {
+        "translate": "<translation_key(|item|, identifier)>"
+    },
+    "minecraft:item_model": "<identifier>",
+    "minecraft:custom_data": {
+        "reel:identifier": "<identifier>"
+    },
+    "minecraft:max_stack_size": 1,
+    "minecraft:rarity": "<hook_rarity(identifier)>",
+    "minecraft:lore": [
+        "",
+        [
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "text": "\\u0001",
+                "color": "white",
+                "font": "reel:specification",
+                "italic": false
+            },
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "translate": "tooltip.reel.when_applied_as",
+                "with": [
+                    {
+                        "translate": "tooltip.reel.hook",
+                        "color": "gray",
+                        "font": "minecraft:default",
+                        "italic": false
+                    }
+                ],
+                "color": "dark_gray",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            }
+        ],
+        "",
+        <hook_description(identifier)>,
+        "",
+        "§r§9Reel Deal"
+    ]
+}|
+
+#
+# Compute the components of a line identified by
+# the given `identifier`.
+#
+# line(|reel:woven_line|) == |...|
+#
+def line(identifier) : |{
+    "!minecraft:entity_data": {},
+    "minecraft:item_name": {
+        "translate": "<translation_key(|item|, identifier)>"
+    },
+    "minecraft:item_model": "<identifier>",
+    "minecraft:custom_data": {
+        "reel:identifier": "<identifier>"
+    },
+    "minecraft:max_stack_size": 1,
+    "minecraft:rarity": "<line_rarity(identifier)>",
+    "minecraft:lore": [
+        "",
+        [
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "text": "\\u0001",
+                "color": "white",
+                "font": "reel:specification",
+                "italic": false
+            },
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "translate": "tooltip.reel.when_applied_as",
+                "with": [
+                    {
+                        "translate": "tooltip.reel.line",
+                        "color": "gray",
+                        "font": "minecraft:default",
+                        "italic": false
+                    }
+                ],
+                "color": "dark_gray",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            }
+        ],
+        "",
+        <line_description(identifier)>,
+        "",
+        [
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "text": "\\u0002",
+                "color": "white",
+                "font": "reel:specification",
+                "italic": false
+            },
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "translate": "tooltip.reel.size",
+                "with": [
+                    <size_description(line_size(identifier))>
+                ],
+                "color": "dark_gray",
+                "font": "minecraft:default",
+                "italic": false
+            },
+            {
+                "text": " ",
+                "color": "white",
+                "font": "minecraft:default",
+                "italic": false
+            }
+        ],
+        "",
+        "§r§9Reel Deal"
+    ]
+}|

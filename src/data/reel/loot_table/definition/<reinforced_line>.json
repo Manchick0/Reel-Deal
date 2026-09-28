@@ -1,0 +1,17 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:blaze_spawn_egg",
+                    "modifier": {
+                        "type": "minecraft:set_components",
+                        "components": <line(|reel:reinforced_line|)>
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -10,6 +10,9 @@
 >
 > **Reel Deal** is a data-pack that relies on a mandatory resource-pack. The latter may be found on the bottom of the page of the version you wish to download. When installing the project as a mod, the resource-pack will be bundled in the JAR file.
 
+> [!NOTE]
+> For the seemingly odd structure of the project, refer to [A Note of Circumscribe](./a-note-on-circumscribe.md).
+
 Fishing has historically been a notoriously monotone activity, with little to no progression. Reel Deal takes the already well-known to the community idea of **rod parts** and incorporates them in a **data-pack**.
 
 Unlike most other fishing-related projects, the act of catching a fish isn't being changed. You still enjoy the vanilla fishing experience, just with a little more shine to it.
@@ -17,7 +20,7 @@ Unlike most other fishing-related projects, the act of catching a fish isn't bei
 > ⚙️ **Getting Started**
 >
 > The basic rod parts needed to get you going in the **Woven Line** and the **Iron Hook**. Craft the **Woven Line** out of 2x strings and a stick, and the **Iron Hook** out of an iron ingot and a nugget.
-> 
+>
 > You may then upgrade your line to **Reinforced Line** with 8 iron nuggets, or just continue fishing – that's how you obtain the rest.
 
 # <center>Rod Parts 🪝</center>
@@ -35,6 +38,7 @@ Hooks, on the other hand, is where you get creative. Each one has a unique abili
 | Cluster | Treasure Catch (Underground, `y <= 48`) |
 | Anchor  | Treasure Catch (Ocean)                  |
 | Golden  | Treasure Catch (Anywhere else)          |
+
 </center>
 
 # <center>Junk 'n Treasure 🪎</center>
